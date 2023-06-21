@@ -1,0 +1,99 @@
+(footprint "MCP96L01T-E_MX" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (attr smd)
+  (fp_text reference "REF**" (at 0.3 -3.65 unlocked) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp efe2fe23-3265-4036-88ee-e4ce71f91e44)
+  )
+  (fp_text value "MCP96L01T-E_MX" (at 0 1 unlocked) (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 4af16338-693f-4b16-8371-93d016da6076)
+  )
+  (fp_rect (start -2.7 -2.7) (end 2.7 2.7) (layer "F.SilkS") (width 0.12) (fill none) (tstamp 550ec1ac-314f-490d-affd-129ba499bb46))
+  (fp_circle (center -3.5 -2) (end -3.3 -2.25) (layer "F.SilkS") (width 0.12) (fill none) (tstamp fa083049-963d-4f36-b246-1c21158a5dd2))
+  (pad "1" smd custom (at -2.25 -1.3 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp e2784ef4-881b-4362-a711-1eca8e28b8e7))
+  (pad "2" smd custom (at -2.25 -0.65 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp b37cfb76-3c6f-4ef3-a852-3f1ea61c5f9f))
+  (pad "3" smd custom (at -2.25 0 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 4d63671d-dcab-449f-b549-064ccfc12e4d))
+  (pad "4" smd custom (at -2.25 0.65 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp eaafdb29-5392-42ab-9ffa-73dbaaff23a5))
+  (pad "5" smd custom (at -2.25 1.3 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 15850a7e-b4a2-48f9-aecb-daa2eece55d2))
+  (pad "6" smd custom (at -1.3 2.25 180) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 23589e47-9b6e-4b3a-8038-00c2b908c4b3))
+  (pad "7" smd custom (at -0.65 2.25 180) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp fbcafa01-04fb-457a-8d0e-7e320aa7cc4d))
+  (pad "8" smd custom (at 0 2.25 180) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 996f8ea1-cf87-4c53-9350-fefdb12ef82d))
+  (pad "9" smd custom (at 0.65 2.25 180) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp a4fabc58-f2a9-4e6c-8e58-e834756ddfa1))
+  (pad "10" smd custom (at 1.3 2.25 180) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 6878efca-e02e-4514-bc54-af7b084d7f89))
+  (pad "11" smd custom (at 2.25 1.3 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 8c456abd-d4da-4789-8463-3bc537c6ca39))
+  (pad "12" smd custom (at 2.25 0.65 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 362cecd8-67cd-4cbf-b3d1-946ea35bec6c))
+  (pad "13" smd custom (at 2.25 0 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 66257317-f30f-4118-8074-339607939a84))
+  (pad "14" smd custom (at 2.25 -0.65 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp d1a8cb29-657a-498e-861f-3625d4fa933c))
+  (pad "15" smd custom (at 2.25 -1.3 90) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp b9d6cf19-f35d-4bb5-b7d0-f84d4559ecb0))
+  (pad "16" smd custom (at 1.3 -2.25) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp f7322b39-4a3a-4280-acfc-892761138235))
+  (pad "17" smd custom (at 0.65 -2.25) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 001eca15-9e16-443b-87fc-649dfc682f8f))
+  (pad "18" smd custom (at 0 -2.25) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 7edb6e5f-00fa-4707-a102-a6352bcf30b4))
+  (pad "19" smd custom (at -0.65 -2.25) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 47bd7a3d-be89-4d42-9dca-7cccfee84899))
+  (pad "20" smd custom (at -1.3 -2.25) (size 0.38 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp b8665531-4be0-4c36-9c2f-0d6e344ec179))
+  (pad "21" smd custom (at 0 0) (size 3.32 3.32) (layers "F.Cu" "F.Paste" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ) (tstamp 9995bb77-150e-422a-b227-2c8dcf3607d3))
+)
