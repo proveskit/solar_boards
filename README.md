@@ -10,6 +10,9 @@ Each solar panel implements the following elements:
 - 1x Fun Blue LED! 
 - 1x 5-pin Molex 1.5mm Pitch Picolock for VSolar, 3.3V Power, and I2C connections
 
+# Variants
+The Z Face Combi design is an in testing variant of the Z- face that combines all of the interfacing for the adjacent solar faces. From there a single connector goes back to the EPS board, rather than all of the solar faces directly connecting to the EPS board as with the original EPS design. 
+
 # Flight Heritage
 *Version history for the solar boards is a little unclear, so we are going to datum the current version at V1 and go from there. 
 | Version | Flights | Status |
