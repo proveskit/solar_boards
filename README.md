@@ -18,4 +18,3 @@ The Z Face Combi design is an in testing variant of the Z- face that combines al
 | Version | Flights | Status |
 | ----------- | ----------- | ----------- |
 | V1 | Pleiades - Yearling, Pleiades - Squared | Supported |
-
