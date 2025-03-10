@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "eef9f006-370f-4adf-854d-7bd60dbbe9e7")
 	(paper "A4")
 	(title_block
@@ -71,18 +71,6 @@
 			(symbol "VEML7700_1_0"
 				(polyline
 					(pts
-						(xy -10.16 -10.16) (xy -10.16 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -10.16 10.16) (xy 10.16 10.16)
 					)
 					(stroke
@@ -95,7 +83,7 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -10.16) (xy -10.16 -10.16)
+						(xy -10.16 -10.16) (xy -10.16 10.16)
 					)
 					(stroke
 						(width 0.254)
@@ -117,6 +105,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy -10.16 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(text "VEML7700"
 					(at 2.54 -12.7 0)
 					(effects
@@ -124,6 +124,24 @@
 							(size 2.54 2.159)
 						)
 						(justify left bottom)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin bidirectional line
@@ -180,30 +198,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -301,10 +306,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x01"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -371,17 +379,6 @@
 			)
 			(symbol "Conn_01x01_1_1"
 				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
 					(start -1.27 1.27)
 					(end 1.27 -1.27)
 					(stroke
@@ -390,6 +387,17 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
@@ -411,9 +419,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -486,7 +497,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -498,7 +509,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -547,11 +558,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D_Schottky"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -619,10 +635,10 @@
 			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -643,10 +659,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -692,9 +708,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -765,18 +784,6 @@
 			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
@@ -789,7 +796,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -813,7 +820,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -862,11 +881,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Solar_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -925,6 +949,30 @@
 				)
 			)
 			(symbol "Solar_Cell_0_1"
+				(polyline
+					(pts
+						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 2.286) (xy -3.556 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -2.032 1.778)
 					(end 2.032 1.524)
@@ -949,7 +997,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 2.286) (xy -3.556 3.81)
+						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
 					)
 					(stroke
 						(width 0)
@@ -973,7 +1021,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -985,7 +1033,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -1013,30 +1061,6 @@
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 3.556) (xy -0.762 2.794) (xy -1.524 2.794)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -1082,6 +1106,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Driver_Haptic:DRV2605LDGS"
 			(exclude_from_sim no)
@@ -1165,35 +1190,17 @@
 				)
 			)
 			(symbol "DRV2605LDGS_1_1"
-				(pin passive line
-					(at 12.7 -5.08 180)
+				(pin bidirectional line
+					(at -12.7 5.08 0)
 					(length 2.54)
-					(name "REG"
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1212,24 +1219,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1291,17 +1280,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 5.08 180)
+				(pin power_in line
+					(at 0 10.16 270)
 					(length 2.54)
-					(name "OUT+"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1328,6 +1317,24 @@
 					)
 				)
 				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "OUT+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
 					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "OUT-"
@@ -1345,12 +1352,35 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "REG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LED:CQY99"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1431,19 +1461,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.381 3.175) (xy -0.127 3.175)
+						(xy -2.413 1.651) (xy -0.889 3.175) (xy -0.889 2.667) (xy -0.889 3.175) (xy -1.397 3.175)
 					)
 					(stroke
 						(width 0)
@@ -1467,6 +1485,18 @@
 				)
 				(polyline
 					(pts
+						(xy 0 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0 -1.27) (xy -2.54 0) (xy 0 1.27) (xy 0 -1.27)
 					)
 					(stroke
@@ -1479,7 +1509,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.413 1.651) (xy -0.889 3.175) (xy -0.889 2.667) (xy -0.889 3.175) (xy -1.397 3.175)
+						(xy 0.381 3.175) (xy -0.127 3.175)
 					)
 					(stroke
 						(width 0)
@@ -1528,6 +1558,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Sensor_Temperature:MCP9808_DFN"
 			(exclude_from_sim no)
@@ -1644,53 +1675,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "Alert"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
-					(at -10.16 -7.62 0)
+					(at -10.16 -2.54 0)
 					(length 2.54)
-					(name "A2"
+					(name "A0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1717,16 +1712,16 @@
 					)
 				)
 				(pin input line
-					(at -10.16 -2.54 0)
+					(at -10.16 -7.62 0)
 					(length 2.54)
-					(name "A0"
+					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1753,6 +1748,24 @@
 					)
 				)
 				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 2.54 -12.7 90)
 					(length 2.54)
 					(name "EP/GND"
@@ -1770,7 +1783,26 @@
 						)
 					)
 				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "Alert"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1850,7 +1882,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1867,12 +1900,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1963,6 +2001,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "solar-panel-NoCutout-rescue:+3.3V-power"
 			(power)
@@ -2031,7 +2070,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2043,7 +2082,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2057,7 +2096,8 @@
 			(symbol "+3.3V-power_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -2074,10 +2114,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "solar-panel-NoCutout-rescue:CON-5040500591-ExtraComponents"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2143,18 +2186,6 @@
 			(symbol "CON-5040500591-ExtraComponents_1_1"
 				(polyline
 					(pts
-						(xy 5.08 -17.78) (xy 12.7 -17.78)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 5.08 2.54) (xy 5.08 -17.78)
 					)
 					(stroke
@@ -2167,211 +2198,7 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -15.24) (xy 5.08 -15.24)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -15.24) (xy 8.89 -16.0782)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -15.24) (xy 8.89 -14.4018)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -12.7) (xy 5.08 -12.7)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -12.7) (xy 8.89 -13.5382)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -12.7) (xy 8.89 -11.8618)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 8.89 -10.9982)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy 8.89 -9.3218)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -8.4582)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -6.7818)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -5.9182)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -4.2418)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -3.3782)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -1.7018)
+						(xy 5.08 -17.78) (xy 12.7 -17.78)
 					)
 					(stroke
 						(width 0.127)
@@ -2395,18 +2222,6 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 0) (xy 8.89 -0.8382)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 10.16 0) (xy 8.89 0.8382)
 					)
 					(stroke
@@ -2419,7 +2234,223 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -17.78) (xy 12.7 2.54)
+						(xy 10.16 0) (xy 8.89 -0.8382)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -1.7018)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -3.3782)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -4.2418)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -5.9182)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -6.7818)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -8.4582)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy 8.89 -9.3218)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -10.16) (xy 8.89 -10.9982)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -12.7) (xy 5.08 -12.7)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -12.7) (xy 8.89 -11.8618)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -12.7) (xy 8.89 -13.5382)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -15.24) (xy 5.08 -15.24)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -15.24) (xy 8.89 -14.4018)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -15.24) (xy 8.89 -16.0782)
 					)
 					(stroke
 						(width 0.127)
@@ -2432,6 +2463,18 @@
 				(polyline
 					(pts
 						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -17.78) (xy 12.7 2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -2568,6 +2611,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "solar-panel-side-Z-rescue:+3.3V-power"
 			(power)
@@ -2636,7 +2680,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2648,7 +2692,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2662,7 +2706,8 @@
 			(symbol "+3.3V-power_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -2679,6 +2724,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -2712,13 +2758,13 @@
 		(uuid "7bff058b-b50f-4eb9-a73e-c98e446f76f7")
 	)
 	(junction
-		(at 195.58 125.73)
+		(at 130.81 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9012c440-dc6b-4328-92f9-429b36a393b4")
 	)
 	(junction
-		(at 195.58 97.79)
+		(at 130.81 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8160d9a-d7d5-4669-8942-35431a63df13")
@@ -2819,7 +2865,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 97.79) (xy 173.99 100.33)
+			(xy 109.22 82.55) (xy 109.22 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2889,7 +2935,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 125.73) (xy 173.99 123.19)
+			(xy 109.22 110.49) (xy 109.22 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2919,7 +2965,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 38.1) (xy 26.67 38.1)
+			(xy 27.94 38.1) (xy 25.4 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2989,7 +3035,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 97.79) (xy 215.9 97.79)
+			(xy 130.81 82.55) (xy 151.13 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3069,7 +3115,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 53.34) (xy 107.95 50.8)
+			(xy 81.28 41.91) (xy 81.28 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3099,7 +3145,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 97.79) (xy 195.58 97.79)
+			(xy 109.22 82.55) (xy 130.81 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3169,7 +3215,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 125.73) (xy 215.9 125.73)
+			(xy 130.81 110.49) (xy 151.13 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3189,7 +3235,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 100.33) (xy 195.58 97.79)
+			(xy 130.81 85.09) (xy 130.81 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3229,7 +3275,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 100.33) (xy 215.9 97.79)
+			(xy 151.13 85.09) (xy 151.13 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3259,7 +3305,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 125.73) (xy 195.58 125.73)
+			(xy 109.22 110.49) (xy 130.81 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3289,7 +3335,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 43.18) (xy 41.91 43.18)
+			(xy 25.4 43.18) (xy 27.94 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3299,7 +3345,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 125.73) (xy 195.58 123.19)
+			(xy 130.81 110.49) (xy 130.81 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3339,7 +3385,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 125.73) (xy 215.9 123.19)
+			(xy 151.13 110.49) (xy 151.13 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3356,16 +3402,6 @@
 			(type default)
 		)
 		(uuid "cb964e37-5f58-45b5-9438-ac2e86c16395")
-	)
-	(wire
-		(pts
-			(xy 195.58 135.89) (xy 231.14 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d714e452-cb15-476a-8a48-ebce7027a16c")
 	)
 	(wire
 		(pts
@@ -3389,7 +3425,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 97.79) (xy 195.58 91.44)
+			(xy 130.81 82.55) (xy 130.81 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3409,7 +3445,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 135.89) (xy 195.58 125.73)
+			(xy 130.81 118.11) (xy 130.81 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3417,19 +3453,9 @@
 		)
 		(uuid "f0a88ea4-3a1b-4930-822b-693baf428775")
 	)
-	(wire
-		(pts
-			(xy 195.58 91.44) (xy 232.41 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f44d102e-daad-44e8-ba97-089713bf1584")
-	)
 	(global_label "VSOLAR"
 		(shape input)
-		(at 232.41 91.44 0)
+		(at 130.81 77.47 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3439,11 +3465,12 @@
 		)
 		(uuid "2eea9603-2696-42f5-a205-45b1328fa55a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -2.54 8.89 0)
+			(at 130.81 68.1237 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3513,7 +3540,7 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 26.67 38.1 180)
+		(at 25.4 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3523,7 +3550,7 @@
 		)
 		(uuid "556d6c8d-0679-43f8-8fc8-9ccc30bb680c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -24.13 -21.59 0)
+			(at -25.4 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3618,7 +3645,7 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 26.67 43.18 180)
+		(at 25.4 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3628,7 +3655,7 @@
 		)
 		(uuid "c50192af-0934-4f6a-b270-49896a87f0a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -24.13 -13.97 0)
+			(at -25.4 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4127,7 +4154,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 107.95 60.96 0)
+		(at 81.28 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4135,7 +4162,7 @@
 		(dnp no)
 		(uuid "040b85c0-03ea-4e39-9e0f-551af1952c56")
 		(property "Reference" "#PWR0107"
-			(at 107.95 67.31 0)
+			(at 81.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4144,7 +4171,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 108.077 65.3542 0)
+			(at 81.407 53.9242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4152,7 +4179,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 60.96 0)
+			(at 81.28 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4161,7 +4188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 60.96 0)
+			(at 81.28 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4170,7 +4197,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 60.96 0)
+			(at 81.28 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,7 +4284,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 195.58 120.65 0)
+		(at 130.81 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4265,7 +4292,7 @@
 		(dnp no)
 		(uuid "1616cab2-3bfd-4ed6-a4b8-fc44c2b8c360")
 		(property "Reference" "SC4"
-			(at 198.3232 119.4816 0)
+			(at 133.5532 104.2416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +4301,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 198.3232 121.793 0)
+			(at 133.5532 106.553 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +4310,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 195.58 119.126 90)
+			(at 130.81 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4319,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 195.58 119.126 90)
+			(at 130.81 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,7 +4328,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 120.65 0)
+			(at 130.81 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4551,7 +4578,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 173.99 120.65 0)
+		(at 109.22 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4559,7 +4586,7 @@
 		(dnp no)
 		(uuid "35426958-34ed-4c2a-90f6-c7085747aa0b")
 		(property "Reference" "SC2"
-			(at 176.7332 119.4816 0)
+			(at 111.9632 104.2416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4595,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 176.7332 121.793 0)
+			(at 111.9632 106.553 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4577,7 +4604,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 173.99 119.126 90)
+			(at 109.22 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4586,7 +4613,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 119.126 90)
+			(at 109.22 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4595,7 +4622,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 120.65 0)
+			(at 109.22 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4620,7 +4647,7 @@
 	)
 	(symbol
 		(lib_id "solar-panel-side-Z-rescue:+3.3V-power")
-		(at 57.15 25.4 0)
+		(at 43.18 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4628,7 +4655,7 @@
 		(dnp no)
 		(uuid "41bbe33f-9db6-41f2-a382-243262a33f26")
 		(property "Reference" "#PWR0101"
-			(at 57.15 29.21 0)
+			(at 43.18 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4637,7 +4664,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 57.531 21.0058 0)
+			(at 43.561 21.0058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,7 +4672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 25.4 0)
+			(at 43.18 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,7 +4681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 25.4 0)
+			(at 43.18 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,7 +4690,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 25.4 0)
+			(at 43.18 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4685,7 +4712,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 215.9 104.14 270)
+		(at 151.13 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4693,7 +4720,7 @@
 		(dnp no)
 		(uuid "431cdc18-0f02-4111-80d4-84fa2cf3ab36")
 		(property "Reference" "D3"
-			(at 219.71 104.14 90)
+			(at 154.94 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4701,7 +4728,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 232.41 106.68 90)
+			(at 167.64 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,7 +4737,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:DO-214AC"
-			(at 215.9 104.14 0)
+			(at 151.13 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4746,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 104.14 0)
+			(at 151.13 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4728,7 +4755,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.9 104.14 0)
+			(at 151.13 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5216,7 +5243,7 @@
 	)
 	(symbol
 		(lib_id "LED:CQY99")
-		(at 107.95 55.88 90)
+		(at 81.28 44.45 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5225,7 +5252,7 @@
 		(fields_autoplaced yes)
 		(uuid "8cb61ad5-a3ba-4b21-97e5-e0e8bb27808e")
 		(property "Reference" "D4"
-			(at 110.49 55.7529 90)
+			(at 83.82 44.3229 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5234,7 +5261,7 @@
 			)
 		)
 		(property "Value" "CQY99"
-			(at 110.49 58.2929 90)
+			(at 83.82 46.8629 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5243,7 +5270,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 103.505 55.88 0)
+			(at 76.835 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5252,7 +5279,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.prtice.info/IMG/pdf/CQY99.pdf"
-			(at 107.95 57.15 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5261,7 +5288,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 55.88 0)
+			(at 81.28 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5286,7 +5313,7 @@
 	)
 	(symbol
 		(lib_id "Adafruit VEML7700-eagle-import:VEML7700")
-		(at 57.15 40.64 0)
+		(at 43.18 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5294,7 +5321,7 @@
 		(dnp no)
 		(uuid "8e065dee-0053-450c-8b81-2b3d696f4dce")
 		(property "Reference" "U1"
-			(at 59.69 30.48 0)
+			(at 45.72 30.48 0)
 			(effects
 				(font
 					(size 2.54 2.159)
@@ -5303,7 +5330,7 @@
 			)
 		)
 		(property "Value" "VEML7700"
-			(at 57.15 40.64 0)
+			(at 43.18 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5312,7 +5339,7 @@
 			)
 		)
 		(property "Footprint" "VEML7700-TT:XDCR_VEML7700-TT"
-			(at 57.15 40.64 0)
+			(at 43.18 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5321,7 +5348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 40.64 0)
+			(at 43.18 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5330,7 +5357,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 40.64 0)
+			(at 43.18 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,7 +5388,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 231.14 135.89 90)
+		(at 130.81 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5369,7 +5396,7 @@
 		(dnp no)
 		(uuid "9596268d-b41a-4f72-aed2-babfdf96aaff")
 		(property "Reference" "#PWR0121"
-			(at 237.49 135.89 0)
+			(at 130.81 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5378,7 +5405,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.3912 135.763 90)
+			(at 130.937 121.3612 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5387,7 +5414,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 135.89 0)
+			(at 130.81 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5396,7 +5423,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 135.89 0)
+			(at 130.81 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5405,7 +5432,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 231.14 135.89 0)
+			(at 130.81 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5693,7 +5720,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 173.99 104.14 270)
+		(at 109.22 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5701,7 +5728,7 @@
 		(dnp no)
 		(uuid "b9dc6823-aafa-497c-9776-6774d526f030")
 		(property "Reference" "D1"
-			(at 177.8 104.14 90)
+			(at 113.03 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5709,7 +5736,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 190.5 106.68 90)
+			(at 125.73 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5718,7 +5745,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:DO-214AC"
-			(at 173.99 104.14 0)
+			(at 109.22 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +5754,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 104.14 0)
+			(at 109.22 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,7 +5763,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 104.14 0)
+			(at 109.22 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5761,7 +5788,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 55.88 0)
+		(at 43.18 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5769,7 +5796,7 @@
 		(dnp no)
 		(uuid "baf6e4db-0c81-4cc5-9196-8dc283127764")
 		(property "Reference" "#PWR0103"
-			(at 57.15 62.23 0)
+			(at 43.18 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5778,7 +5805,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.277 60.2742 0)
+			(at 43.307 60.2742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5786,7 +5813,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 55.88 0)
+			(at 43.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5795,7 +5822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 55.88 0)
+			(at 43.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5804,7 +5831,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 55.88 0)
+			(at 43.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5826,7 +5853,7 @@
 	)
 	(symbol
 		(lib_id "solar-panel-side-Z-rescue:+3.3V-power")
-		(at 107.95 43.18 0)
+		(at 81.28 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5834,7 +5861,7 @@
 		(dnp no)
 		(uuid "bd7f53f6-e6b0-4c79-8e31-81304f29e8df")
 		(property "Reference" "#PWR0106"
-			(at 107.95 46.99 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5843,7 +5870,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 108.331 38.7858 0)
+			(at 81.661 27.3558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5851,7 +5878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 43.18 0)
+			(at 81.28 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5860,7 +5887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 43.18 0)
+			(at 81.28 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5869,7 +5896,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 43.18 0)
+			(at 81.28 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5891,7 +5918,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 107.95 46.99 0)
+		(at 81.28 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5899,7 +5926,7 @@
 		(dnp no)
 		(uuid "c9158848-8a35-429c-8d69-eddf6d79b624")
 		(property "Reference" "R1"
-			(at 109.6772 45.8216 0)
+			(at 83.0072 34.3916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,7 +5935,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 109.6772 48.133 0)
+			(at 83.0072 36.703 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5917,7 +5944,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 108.966 47.244 90)
+			(at 82.296 35.814 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5926,7 +5953,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 46.99 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5935,7 +5962,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 46.99 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6180,7 +6207,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 215.9 113.03 0)
+		(at 151.13 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6188,7 +6215,7 @@
 		(dnp no)
 		(uuid "e0fc0779-d4a1-41b2-bd4e-edb05dcac20e")
 		(property "Reference" "SC5"
-			(at 218.6432 111.8616 0)
+			(at 153.8732 96.6216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6197,7 +6224,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 218.6432 114.173 0)
+			(at 153.8732 98.933 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6206,7 +6233,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 215.9 111.506 90)
+			(at 151.13 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6215,7 +6242,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 111.506 90)
+			(at 151.13 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6224,7 +6251,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.9 113.03 0)
+			(at 151.13 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6249,7 +6276,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 173.99 113.03 0)
+		(at 109.22 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6257,7 +6284,7 @@
 		(dnp no)
 		(uuid "ef587138-0851-4854-8fea-6ccde14b6b3a")
 		(property "Reference" "SC1"
-			(at 176.7332 111.8616 0)
+			(at 111.9632 96.6216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6266,7 +6293,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 176.7332 114.173 0)
+			(at 111.9632 98.933 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6275,7 +6302,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 173.99 111.506 90)
+			(at 109.22 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6284,7 +6311,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 111.506 90)
+			(at 109.22 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6293,7 +6320,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 113.03 0)
+			(at 109.22 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6318,7 +6345,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 215.9 120.65 0)
+		(at 151.13 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6326,7 +6353,7 @@
 		(dnp no)
 		(uuid "f2eb85ae-8770-45f8-a3ab-0e36e46f3efa")
 		(property "Reference" "SC6"
-			(at 218.6432 119.4816 0)
+			(at 153.8732 104.2416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6335,7 +6362,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 218.6432 121.793 0)
+			(at 153.8732 106.553 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6344,7 +6371,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 215.9 119.126 90)
+			(at 151.13 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6353,7 +6380,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 119.126 90)
+			(at 151.13 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6362,7 +6389,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.9 120.65 0)
+			(at 151.13 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6387,7 +6414,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 195.58 113.03 0)
+		(at 130.81 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6395,7 +6422,7 @@
 		(dnp no)
 		(uuid "f766531e-1994-47d0-a497-a403876f4cc9")
 		(property "Reference" "SC3"
-			(at 198.3232 111.8616 0)
+			(at 133.5532 96.6216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6404,7 +6431,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 198.3232 114.173 0)
+			(at 133.5532 98.933 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6413,7 +6440,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 195.58 111.506 90)
+			(at 130.81 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6422,7 +6449,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 195.58 111.506 90)
+			(at 130.81 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,7 +6458,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 113.03 0)
+			(at 130.81 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,7 +6548,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 195.58 104.14 270)
+		(at 130.81 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6529,7 +6556,7 @@
 		(dnp no)
 		(uuid "f950820a-7c9a-4bb1-abb3-c9bfb2ead70e")
 		(property "Reference" "D2"
-			(at 199.39 104.14 90)
+			(at 134.62 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +6564,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 212.09 106.68 90)
+			(at 147.32 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6546,7 +6573,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:DO-214AC"
-			(at 195.58 104.14 0)
+			(at 130.81 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6555,7 +6582,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 195.58 104.14 0)
+			(at 130.81 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6564,7 +6591,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 104.14 0)
+			(at 130.81 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6657,4 +6684,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
