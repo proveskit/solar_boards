@@ -2366,6 +2366,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "NOTE:\nFor BOM Consolidation Initial V2 Production Uses SS34 Schottky Diodes\nRun a test to ensure the 200mV higher forward voltage doesn't\ncuase issues with charge circuit."
+		(exclude_from_sim no)
+		(at 117.348 133.096 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bfd649c6-bf3a-4690-bfe8-59b927c47936")
+	)
 	(junction
 		(at 33.02 97.79)
 		(diameter 0)
