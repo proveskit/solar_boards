@@ -32833,7 +32833,7 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "PROVES XY SOLAR: YEARLING KIT V1.5\nAMANDA EWING, NICOLE MAGGARD"
+	(gr_text "PROVES XY SOLAR: KIT V3\nAMANDA EWING, NICOLE MAGGARD, Michael Pham"
 		(at 112.29 68.36 0)
 		(layer "B.SilkS")
 		(uuid "55fd6fd0-51a2-400e-8512-b6a87b0cf1f2")
