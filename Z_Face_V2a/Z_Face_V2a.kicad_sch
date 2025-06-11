@@ -7771,7 +7771,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TCA4111A"
+		(property "Value" "TCA4311A"
 			(at 111.3633 55.88 0)
 			(effects
 				(font
