@@ -2725,6 +2725,22 @@
 		(uuid "41ddc449-c9e6-4975-b875-a7f67ccf3bf0")
 	)
 	(no_connect
+		(at 121.92 162.56)
+		(uuid "620758b7-9d6b-41a9-a237-152035e16468")
+	)
+	(no_connect
+		(at 121.92 151.13)
+		(uuid "70c53dd0-80e6-4255-8acb-7f466f97ae1a")
+	)
+	(no_connect
+		(at 121.92 182.88)
+		(uuid "73073145-bc64-4f1a-ae9c-6a25c6e9e79c")
+	)
+	(no_connect
+		(at 121.92 130.81)
+		(uuid "86b2d77a-b151-4144-80dd-c29e6e66146f")
+	)
+	(no_connect
 		(at 55.88 97.79)
 		(uuid "a59d396c-fed6-4a80-8572-53473dba582b")
 	)
