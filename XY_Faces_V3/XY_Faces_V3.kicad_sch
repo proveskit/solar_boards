@@ -3367,7 +3367,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 140.97) (xy 146.05 143.51)
+			(xy 146.05 133.35) (xy 146.05 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6593,75 +6593,6 @@
 			(project ""
 				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 146.05 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b431428c-0962-43ca-8d90-ca380a2d1b40")
-		(property "Reference" "R3"
-			(at 147.7772 135.9916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0-Ohm"
-			(at 137.16 136.144 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.066 137.414 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 146.05 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40a725cf-efbb-48a8-ae78-ea1be297d444")
-		)
-		(pin "2"
-			(uuid "3cefac43-28b6-4f18-a76d-df3e3afd106b")
-		)
-		(instances
-			(project ""
-				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
-					(reference "R3")
 					(unit 1)
 				)
 			)
