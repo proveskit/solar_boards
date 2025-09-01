@@ -59,7 +59,20 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|154787500|115587500|4f76c1b4-9ddc-4f46-b171-cc7f35f2dd47|8223e592-f1f7-4c85-b72d-6004a50dc2d8",
+          "0.15mm Okay on Intracomponent Clearance "
+        ],
+        [
+          "clearance|156212500|115912500|257787d5-dda2-4609-9ed5-843e272bff68|5f54c1dd-3bee-4111-b29f-fee1dc913eab",
+          "0.15mm Okay on Intracomponent Clearance "
+        ],
+        [
+          "clearance|156212500|116412500|bffcbbcd-bc34-4f0a-a262-9ed469d5bf5c|257787d5-dda2-4609-9ed5-843e272bff68",
+          "0.15mm Okay on Intracomponent Clearance "
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
