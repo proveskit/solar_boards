@@ -2190,27 +2190,49 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Temperature:MCP9808_DFN"
+		(symbol "Sensor_Temperature:TMP112xxDRL"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -6.35 11.43 0)
+				(at -2.54 10.795 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Value" "MCP9808_DFN"
-				(at 10.16 11.43 0)
+			(property "Value" "TMP112xxDRL"
+				(at -2.54 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.7x1.4mm"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+				(at 1.27 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp112.pdf"
+				(at 1.27 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Digital Temperature Sensor with I2C/SMBus/Two-wire Interface, 12 bits, ±1°C, one-shot conversion, alert, nist traceable, SOT-563"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2219,16 +2241,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP9808-0.5C-Maximum-Accuracy-Digital-Temperature-Sensor-Data-Sheet-DS20005095B.pdf"
-				(at -6.35 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "+/-0.25C (+/-0.5C) Typical (Maximum), Digital Temperature Sensor, DFN-8"
+			(property "ki_keywords" "digital temperature sensor i2c smbus two-wire nist"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2237,7 +2250,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "temperature sensor I2C"
+			(property "ki_fp_filters" "SOT?563*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2246,19 +2259,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DFN*1EP*3x2mm*P0.5mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MCP9808_DFN_0_1"
+			(symbol "TMP112xxDRL_0_1"
 				(rectangle
-					(start -7.62 10.16)
-					(end 7.62 -10.16)
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2268,65 +2272,129 @@
 					)
 				)
 			)
-			(symbol "MCP9808_DFN_1_1"
-				(pin bidirectional line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+			(symbol "TMP112xxDRL_1_1"
+				(polyline
+					(pts
+						(xy 2.413 1.905) (xy 2.413 -1.27)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin input line
+				(polyline
+					(pts
+						(xy 2.413 1.905) (xy 3.048 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 1.27) (xy 3.048 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 0.635) (xy 3.048 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 0) (xy 3.048 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 -0.635) (xy 3.048 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.413 1.905)
+					(mid 3.048 2.5373)
+					(end 3.683 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.048 -3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 1.905) (xy 3.683 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 -3.175)
+					(end 2.413 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin bidirectional line
 					(at -10.16 5.08 0)
 					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "A0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "A1"
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2342,16 +2410,16 @@
 					)
 				)
 				(pin input line
-					(at -10.16 -7.62 0)
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "A2"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2359,28 +2427,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 12.7 270)
+				(pin input line
+					(at -10.16 -2.54 0)
 					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
+					(name "ADD0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2396,16 +2446,16 @@
 					)
 				)
 				(pin power_in line
-					(at 2.54 -12.7 90)
+					(at 0 10.16 270)
 					(length 2.54)
-					(name "EP/GND"
+					(name "V+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2413,10 +2463,28 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 0 180)
+				(pin power_in line
+					(at 0 -10.16 90)
 					(length 2.54)
-					(name "Alert"
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "ALERT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2906,12 +2974,6 @@
 		(uuid "c0a1fe19-33ca-46a5-9b1f-f58ebfeba807")
 	)
 	(junction
-		(at 193.04 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "00406a56-a0f2-4798-ae5e-1295b9549092")
-	)
-	(junction
 		(at 205.74 17.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2922,12 +2984,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d06ce81-cc12-4257-af10-01545c8a26cb")
-	)
-	(junction
-		(at 205.74 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1668fb62-c0a6-489d-bb8f-fd7ab24c3450")
 	)
 	(junction
 		(at 93.98 60.96)
@@ -2954,6 +3010,12 @@
 		(uuid "34e4dfad-2b86-48ef-aca6-1e2db052d5ab")
 	)
 	(junction
+		(at 222.25 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39735a94-d8d9-4977-85a8-fe54dd3a0936")
+	)
+	(junction
 		(at 130.81 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2964,6 +3026,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58a6ce28-7a56-4790-9a94-68cb9915d940")
+	)
+	(junction
+		(at 205.74 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84c3f859-d62c-4e4f-b1c0-4e05a4e1eca0")
 	)
 	(junction
 		(at 88.9 143.51)
@@ -3000,12 +3068,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b41159fd-e7d6-41ee-99a5-246df1cacb25")
-	)
-	(junction
-		(at 193.04 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b999e11b-4495-42a5-b5ba-a68812d18d58")
 	)
 	(junction
 		(at 93.98 49.53)
@@ -3068,10 +3130,6 @@
 		(uuid "883567bb-a88d-4892-9b72-c96bdcecaeae")
 	)
 	(no_connect
-		(at 215.9 86.36)
-		(uuid "a2aed955-b4e7-4788-994a-e35d9d43af67")
-	)
-	(no_connect
 		(at 33.02 146.05)
 		(uuid "e7c04295-bf02-45ef-8d19-16b140af42c8")
 	)
@@ -3108,16 +3166,6 @@
 			(type default)
 		)
 		(uuid "0276bdce-0bc3-468e-b4e4-33e3aa112dc9")
-	)
-	(wire
-		(pts
-			(xy 193.04 88.9) (xy 193.04 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03829177-bd38-4b78-8782-cb18879dfc10")
 	)
 	(wire
 		(pts
@@ -3168,16 +3216,6 @@
 			(type default)
 		)
 		(uuid "0bffa3d7-88e4-4896-8bed-3ca85d38fab4")
-	)
-	(wire
-		(pts
-			(xy 208.28 101.6) (xy 205.74 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f1504a9-f386-43f0-8d4b-bde38231342f")
 	)
 	(wire
 		(pts
@@ -3251,13 +3289,13 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 69.85) (xy 222.25 73.66)
+			(xy 205.74 97.79) (xy 205.74 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "254b2ab0-0551-43b2-a4a1-790e2e24cef0")
+		(uuid "215a7b77-43a1-4fc7-9f01-e1edaa9c949b")
 	)
 	(wire
 		(pts
@@ -3421,16 +3459,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 99.06) (xy 208.28 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "439ef062-1074-4651-b4f3-72893704109e")
-	)
-	(wire
-		(pts
 			(xy 152.4 31.75) (xy 190.5 31.75)
 		)
 		(stroke
@@ -3511,6 +3539,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 86.36) (xy 193.04 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e470077-c166-49c9-9d18-de55cc1ac973")
+	)
+	(wire
+		(pts
 			(xy 218.44 133.35) (xy 223.52 133.35)
 		)
 		(stroke
@@ -3518,6 +3556,16 @@
 			(type default)
 		)
 		(uuid "62991d95-8934-4ed6-9db1-6f33cca0a426")
+	)
+	(wire
+		(pts
+			(xy 222.25 78.74) (xy 222.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ee85ff-dc68-4d69-90d1-ed7a1bc6eed0")
 	)
 	(wire
 		(pts
@@ -3551,6 +3599,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 86.36) (xy 193.04 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74d2d4a8-be54-4500-b53a-ffb248221dd7")
+	)
+	(wire
+		(pts
 			(xy 27.94 73.66) (xy 15.24 73.66)
 		)
 		(stroke
@@ -3578,16 +3636,6 @@
 			(type default)
 		)
 		(uuid "790bc283-066e-4c5e-ba14-56c5d2450952")
-	)
-	(wire
-		(pts
-			(xy 205.74 101.6) (xy 205.74 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a04b49c-6b0f-46d2-9872-3bb253665ee5")
 	)
 	(wire
 		(pts
@@ -3688,6 +3736,16 @@
 			(type default)
 		)
 		(uuid "89741027-5765-4d87-9c4a-6c0324a82808")
+	)
+	(wire
+		(pts
+			(xy 222.25 69.85) (xy 222.25 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b7fa47c-ab0e-4076-8bc4-164d5b4f3761")
 	)
 	(wire
 		(pts
@@ -3811,16 +3869,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 91.44) (xy 193.04 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9faca559-1c5b-4974-b487-35c5b6bf6cc6")
-	)
-	(wire
-		(pts
 			(xy 26.67 78.74) (xy 27.94 78.74)
 		)
 		(stroke
@@ -3858,6 +3906,16 @@
 			(type default)
 		)
 		(uuid "a5434609-b93e-44d7-8011-f6d719894f53")
+	)
+	(wire
+		(pts
+			(xy 193.04 97.79) (xy 205.74 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af19b726-6f15-457d-81b0-2a6467291049")
 	)
 	(wire
 		(pts
@@ -3951,16 +4009,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 91.44) (xy 195.58 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4bba729-77b1-450d-abcf-c543ef9e7fdf")
-	)
-	(wire
-		(pts
 			(xy 93.98 49.53) (xy 109.22 49.53)
 		)
 		(stroke
@@ -4028,6 +4076,16 @@
 			(type default)
 		)
 		(uuid "cfae6334-dfed-4b33-be75-044976da49dd")
+	)
+	(wire
+		(pts
+			(xy 215.9 78.74) (xy 222.25 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0a75a57-76c5-4cde-9761-dabfa7091769")
 	)
 	(wire
 		(pts
@@ -4101,26 +4159,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 93.98) (xy 193.04 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df723fbc-1711-4f08-b557-e71c67ed6fdb")
-	)
-	(wire
-		(pts
-			(xy 205.74 99.06) (xy 205.74 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0f9f49e-11fc-4153-b1ec-be41ad1b2d8b")
-	)
-	(wire
-		(pts
 			(xy 93.98 60.96) (xy 96.52 60.96)
 		)
 		(stroke
@@ -4138,16 +4176,6 @@
 			(type default)
 		)
 		(uuid "e79e37b1-7f57-4a6d-a6cf-90bc9cce72c2")
-	)
-	(wire
-		(pts
-			(xy 195.58 93.98) (xy 193.04 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eace3f64-76d6-4b91-8bd1-7172385e2245")
 	)
 	(wire
 		(pts
@@ -4178,6 +4206,16 @@
 			(type default)
 		)
 		(uuid "eec1afaa-d6e6-4b81-82e6-7a465259efc6")
+	)
+	(wire
+		(pts
+			(xy 222.25 97.79) (xy 205.74 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef8acb3b-ce6b-4c51-af6e-9a4f8bf0e404")
 	)
 	(wire
 		(pts
@@ -4221,16 +4259,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 88.9) (xy 193.04 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9edbc3a-96bf-4448-a967-0fbf4b078f8d")
-	)
-	(wire
-		(pts
 			(xy 38.1 53.34) (xy 67.31 53.34)
 		)
 		(stroke
@@ -4248,6 +4276,16 @@
 			(type default)
 		)
 		(uuid "fbd0e13f-cd80-4495-aeae-d0b346d0df20")
+	)
+	(wire
+		(pts
+			(xy 205.74 100.33) (xy 205.74 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcc0cb1b-818d-4e03-aa63-001dd9a4a021")
 	)
 	(label "SCLIN"
 		(at 41.91 78.74 0)
@@ -5546,15 +5584,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 73.66 0)
+		(at 205.74 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "06fe49d2-16fc-41bd-9bd3-446f88c92152")
-		(property "Reference" "#PWR010"
-			(at 222.25 80.01 0)
+		(uuid "0cb3e207-6f5a-4134-b1ee-6d5bfd795f96")
+		(property "Reference" "#PWR07"
+			(at 205.74 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5563,7 +5601,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.377 78.0542 0)
+			(at 205.867 104.7242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5571,7 +5609,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 73.66 0)
+			(at 205.74 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5580,7 +5618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 73.66 0)
+			(at 205.74 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5589,7 +5627,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 73.66 0)
+			(at 205.74 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5597,12 +5635,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "bbc519e6-6e92-4060-bffa-f14e87d9c18b")
+			(uuid "c232c340-f03d-49ec-b33f-70496f097fc4")
 		)
 		(instances
-			(project ""
+			(project "Z_Face_V2a"
 				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
-					(reference "#PWR010")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6421,6 +6459,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Sensor_Temperature:TMP112xxDRL")
+		(at 205.74 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "63a04c4e-e482-498b-a5d3-4dcdbffd076c")
+		(property "Reference" "U5"
+			(at 200.914 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMP112xxDRL"
+			(at 212.852 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+			(at 207.01 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp112.pdf"
+			(at 207.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Digital Temperature Sensor with I2C/SMBus/Two-wire Interface, 12 bits, ±1°C, one-shot conversion, alert, nist traceable, SOT-563"
+			(at 205.74 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "b362eca7-cfd4-4984-969e-642bd3b47eba")
+		)
+		(pin "6"
+			(uuid "0e1c5e0a-2e1e-4107-affb-80966ba16ba2")
+		)
+		(pin "1"
+			(uuid "5e5f3eda-9bc9-4b22-ad3d-f0be69ccbdad")
+		)
+		(pin "4"
+			(uuid "7a9a952f-4392-4034-836e-d014968d0f95")
+		)
+		(pin "2"
+			(uuid "1a03eb0f-c13b-4a2c-8b19-52e74aca7529")
+		)
+		(pin "3"
+			(uuid "a16925f8-5830-4353-96f1-8c371aa8c627")
+		)
+		(instances
+			(project ""
+				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 48.26 191.77 0)
 		(unit 1)
@@ -7169,70 +7288,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 205.74 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b06fc4de-1377-4a43-9200-2aca62326857")
-		(property "Reference" "#PWR07"
-			(at 205.74 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 205.867 108.5342 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f7304a35-4520-4d02-bbc9-82883d69a64d")
-		)
-		(instances
-			(project ""
-				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 130.81 60.96 0)
 		(unit 1)
@@ -7423,159 +7478,6 @@
 			(project ""
 				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor_Temperature:MCP9808_DFN")
-		(at 205.74 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c926b066-ab87-46dc-98d1-9e57478dc9c9")
-		(property "Reference" "U3"
-			(at 194.31 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP9808_DFN"
-			(at 188.722 73.914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SolarPanelBoards:MCP9808-NoLeadPackage"
-			(at 205.74 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP9808-0.5C-Maximum-Accuracy-Digital-Temperature-Sensor-Data-Sheet-DS20005095B.pdf"
-			(at 199.39 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "da943a11-c27d-4239-94ee-db76f8b18d79")
-		)
-		(pin "2"
-			(uuid "bf0f216d-2e13-4ae0-9396-2506a645efdb")
-		)
-		(pin "3"
-			(uuid "a6530a8f-78d8-4b7c-a40b-b1e3f799cbb7")
-		)
-		(pin "4"
-			(uuid "9cd8c61b-c7f9-42a9-9487-f66ef9e181a8")
-		)
-		(pin "5"
-			(uuid "be7007af-db15-4ce0-b819-a6be17b9b295")
-		)
-		(pin "6"
-			(uuid "669bad12-0360-4dc7-82fb-ac33c54a7ba0")
-		)
-		(pin "7"
-			(uuid "f727c1af-e07e-456c-b487-9b0e46a39e49")
-		)
-		(pin "8"
-			(uuid "85faa4a1-d426-4e54-baf3-c72b1201a971")
-		)
-		(pin "9"
-			(uuid "a9b35c9f-6c1a-4f50-b553-111e04b5f7ce")
-		)
-		(instances
-			(project ""
-				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 193.04 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cf6167c0-9b66-4065-939c-7bcdbe3487a1")
-		(property "Reference" "#PWR03"
-			(at 193.04 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 193.167 103.4542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "501caf94-5223-4491-b0d4-ab37a73b6a09")
-		)
-		(instances
-			(project ""
-				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7806,7 +7708,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "10nF"
 			(at 213.36 65.7606 90)
 			(effects
 				(font
