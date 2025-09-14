@@ -3919,6 +3919,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 38.1) (xy 93.98 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0fe52ba-9fc6-4386-b840-f52fecbc7385")
+	)
+	(wire
+		(pts
 			(xy 82.55 82.55) (xy 93.98 82.55)
 		)
 		(stroke
@@ -7821,6 +7831,70 @@
 			(project ""
 				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "solar-panel-side-Z-rescue:+3.3V-power")
+		(at 93.98 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edbf9d6c-c7f1-476d-9661-22b170fc52af")
+		(property "Reference" "#PWR024"
+			(at 93.98 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 94.361 33.7058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4563a7a-575b-4e4d-aeb2-6c6a90019879")
+		)
+		(instances
+			(project "Z_Face_V3"
+				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
