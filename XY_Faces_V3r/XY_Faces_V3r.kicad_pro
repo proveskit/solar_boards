@@ -530,7 +530,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../Downloads/solar-panel-NoCutout.step",
+      "step": "../../../Downloads/solar-panel-v3r-fuse.step",
       "svg": "",
       "vrml": ""
     },
