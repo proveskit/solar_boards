@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -59,7 +59,108 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|137357537|95681281|ce2b560a-f982-4810-8852-290ec295c666|f90b62e5-84a3-4973-8323-1426f19e8a41",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|137711091|95327728|db4ba208-1fea-4517-a753-6f337b2ef53c|ce2b560a-f982-4810-8852-290ec295c666",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|138135355|96918718|d3c9ea23-cc58-41e7-9ad5-46f34b700f0b|b59ad446-ea70-4ba9-8204-36964816b3ef",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|140301903|89838299|2ccc9ee0-42d1-4ae8-b796-4a2e6f4f733c|13421d73-454b-41de-a24e-8825198c46a9",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|140761523|89378679|130d8894-e41c-4f48-bf52-3d70c82fe585|2ccc9ee0-42d1-4ae8-b796-4a2e6f4f733c",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|141221142|88919060|393326f1-a694-4c87-ba0e-7703a6f516af|130d8894-e41c-4f48-bf52-3d70c82fe585",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|143006586|93108668|f2c7b879-b295-4dd5-98c3-404b9332560a|41bcabec-fc4f-408b-aca1-8a0c9a39f522",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|143466205|92649049|41bcabec-fc4f-408b-aca1-8a0c9a39f522|590815b7-ac81-4943-8e08-ed8cfe0ddfa8",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|143925825|92189429|590815b7-ac81-4943-8e08-ed8cfe0ddfa8|633e502e-ab88-4fd5-b62c-9203c7ab3888",
+          "Pad to Pad of 0.15mm OK at JLC"
+        ],
+        [
+          "clearance|148766780|120500000|8d8b9669-ace4-408d-a915-ab9685dec5af|e7ba3a2c-674b-46a3-ba3d-422acdbbfc56",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149064000|119852780|70df94a5-8586-4d9b-8180-ee284e306060|989f7858-f2d2-43bb-8390-5fcbc1e2a184",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149064000|119852780|e7ba3a2c-674b-46a3-ba3d-422acdbbfc56|989f7858-f2d2-43bb-8390-5fcbc1e2a184",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149064000|120202780|2e88b75f-f4bf-4ca5-9a12-58c794fd38b7|70df94a5-8586-4d9b-8180-ee284e306060",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149095750|119952780|70df94a5-8586-4d9b-8180-ee284e306060|e7ba3a2c-674b-46a3-ba3d-422acdbbfc56",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149263975|119952059|70df94a5-8586-4d9b-8180-ee284e306060|d739c5da-3c56-443c-bdcb-e0f97253569d",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149270478|106050860|1177b88e-2faf-4cca-98d4-9b79d8179e63|a56111e0-b302-4245-ab17-d92f68f45ed5",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149270478|62400700|b6188ffd-91d8-47e0-a085-1cd5e6605d04|ce7e6203-7afa-4a84-9263-215db8bae627",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149857522|62400700|b6188ffd-91d8-47e0-a085-1cd5e6605d04|d50bf15f-def6-44e6-9200-61bf60cbe808",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|149864020|119950971|70df94a5-8586-4d9b-8180-ee284e306060|55d4352e-fb2f-454b-89d3-e9edd808a7af",
+          "For Torque Coils"
+        ],
+        [
+          "clearance|150032250|119952780|70df94a5-8586-4d9b-8180-ee284e306060|d8201bc2-3f6b-4025-9a9a-f3c9b83fdb97",
+          "For Torque Coils"
+        ],
+        [
+          "hole_clearance|149564000|105988780|a2233dbc-11db-4783-93f6-a95d37f36928|1177b88e-2faf-4cca-98d4-9b79d8179e63",
+          "For Torque Coils"
+        ],
+        [
+          "shorting_items|149064000|120202780|2e88b75f-f4bf-4ca5-9a12-58c794fd38b7|e7ba3a2c-674b-46a3-ba3d-422acdbbfc56",
+          "For Torque Coils"
+        ],
+        [
+          "shorting_items|149564000|105688780|1177b88e-2faf-4cca-98d4-9b79d8179e63|a2233dbc-11db-4783-93f6-a95d37f36928",
+          "For Torque Coils"
+        ],
+        [
+          "shorting_items|149564000|106052780|a2233dbc-11db-4783-93f6-a95d37f36928|a56111e0-b302-4245-ab17-d92f68f45ed5",
+          "For Torque Coils"
+        ],
+        [
+          "solder_mask_bridge|149857522|62400700|d50bf15f-def6-44e6-9200-61bf60cbe808|b6188ffd-91d8-47e0-a085-1cd5e6605d04",
+          "For Torque Coils"
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -80,7 +181,7 @@
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "error",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "hole_to_hole": "error",
@@ -108,7 +209,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
