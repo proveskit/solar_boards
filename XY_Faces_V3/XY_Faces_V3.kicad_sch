@@ -11,196 +11,6 @@
 		(company "CPP BroncoSpace")
 	)
 	(lib_symbols
-		(symbol "Adafruit VEML7700-eagle-import:VEML7700"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 2.54 10.16 0)
-				(effects
-					(font
-						(size 2.54 2.159)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "VEML7700"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Adafruit VEML7700:VEML7700"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VEML7700_1_0"
-				(polyline
-					(pts
-						(xy -10.16 10.16) (xy 10.16 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 -10.16) (xy -10.16 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 10.16) (xy 10.16 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy -10.16 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "VEML7700"
-					(at 2.54 -12.7 0)
-					(effects
-						(font
-							(size 2.54 2.159)
-						)
-						(justify left bottom)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -2.54 0)
-					(length 5.08)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 15.24 270)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -15.24 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -2571,6 +2381,199 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "easyeda2kicad:VEML6031X00"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -9.652 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VEML6031X00"
+				(at -9.652 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:SENSOR-SMD_VEML6031X00"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C3678616"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VEML6031X00_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -5.08 3.81)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -1.27 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "VEML6031X00_1_1"
+				(pin unspecified line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -3192,6 +3195,10 @@
 		(uuid "7dddbda8-db15-4c51-9ead-c4963f77bb67")
 	)
 	(no_connect
+		(at 153.67 41.91)
+		(uuid "84b8e173-9114-4797-ae75-b61f0bb66989")
+	)
+	(no_connect
 		(at 66.04 156.21)
 		(uuid "8ea395a7-3889-4a95-9353-a6ecca8c6ae5")
 	)
@@ -3495,16 +3502,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 39.37) (xy 129.54 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53b4cf32-23cf-4a4a-b8d8-056bba87fc89")
-	)
-	(wire
-		(pts
 			(xy 156.21 90.17) (xy 168.91 90.17)
 		)
 		(stroke
@@ -3535,7 +3532,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 92.71) (xy 118.11 44.45)
+			(xy 118.11 92.71) (xy 118.11 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3615,7 +3612,17 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 90.17) (xy 115.57 39.37)
+			(xy 118.11 43.18) (xy 135.89 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cac7b5b-0575-4609-9676-f06e7ec2fec9")
+	)
+	(wire
+		(pts
+			(xy 115.57 90.17) (xy 115.57 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3782,16 +3789,6 @@
 			(type default)
 		)
 		(uuid "8da7fa67-fcee-4070-8ef7-f30d69999cb2")
-	)
-	(wire
-		(pts
-			(xy 118.11 44.45) (xy 129.54 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8edb9357-664f-4390-9579-08681c64260c")
 	)
 	(wire
 		(pts
@@ -4065,6 +4062,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 40.64) (xy 135.89 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbd2ccd7-4789-4134-8f5f-4557435350cd")
+	)
+	(wire
+		(pts
 			(xy 146.05 170.18) (xy 146.05 175.26)
 		)
 		(stroke
@@ -4185,7 +4192,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 25.4) (xy 144.78 26.67)
+			(xy 144.78 25.4) (xy 144.78 34.29)
 		)
 		(stroke
 			(width 0)
@@ -6148,6 +6155,94 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda2kicad:VEML6031X00")
+		(at 144.78 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40b96b08-b95e-4d86-9ddd-47db040a655c")
+		(property "Reference" "U7"
+			(at 153.924 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VEML6031X00"
+			(at 153.924 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:SENSOR-SMD_VEML6031X00"
+			(at 144.78 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C3678616"
+			(at 144.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e525301b-d392-4b68-8c61-86b4f15810f0")
+		)
+		(pin "5"
+			(uuid "e07e6dde-2bda-4aa3-8a1b-72a67ee65ee8")
+		)
+		(pin "3"
+			(uuid "c223ad71-cf2c-4e08-8550-e1a42e996980")
+		)
+		(pin "4"
+			(uuid "690e7020-df1e-4f63-b2ca-20185e2ae7f5")
+		)
+		(pin "6"
+			(uuid "cd6dd5ab-6e4c-4016-bea4-61e366435007")
+		)
+		(pin "2"
+			(uuid "6ad0ef13-8477-4a72-8be3-f69e0173010e")
+		)
+		(instances
+			(project ""
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 57.15 97.79 90)
 		(unit 1)
@@ -7151,81 +7246,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit VEML7700-eagle-import:VEML7700")
-		(at 144.78 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8e065dee-0053-450c-8b81-2b3d696f4dce")
-		(property "Reference" "U1"
-			(at 147.32 31.75 0)
-			(effects
-				(font
-					(size 2.54 2.159)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "VEML7700"
-			(at 144.78 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "VEML7700-TT:XDCR_VEML7700-TT"
-			(at 144.78 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "61e4c414-e228-4535-814a-ab34dc34f08c")
-		)
-		(pin "2"
-			(uuid "947c2471-1412-4cbf-90b8-6021c1a60ddb")
-		)
-		(pin "3"
-			(uuid "39331783-de02-497d-a354-1773a748d7b6")
-		)
-		(pin "4"
-			(uuid "295d9add-1b16-4291-9e98-0c216c25ba10")
-		)
-		(instances
-			(project ""
-				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 240.03 152.4 0)
 		(unit 1)
@@ -7939,7 +7959,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 57.15 0)
+		(at 144.78 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7947,7 +7967,7 @@
 		(dnp no)
 		(uuid "baf6e4db-0c81-4cc5-9196-8dc283127764")
 		(property "Reference" "#PWR0103"
-			(at 144.78 63.5 0)
+			(at 144.78 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7956,7 +7976,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.907 61.5442 0)
+			(at 144.907 53.9242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7964,7 +7984,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 57.15 0)
+			(at 144.78 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7973,7 +7993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 57.15 0)
+			(at 144.78 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7982,7 +8002,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 57.15 0)
+			(at 144.78 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
