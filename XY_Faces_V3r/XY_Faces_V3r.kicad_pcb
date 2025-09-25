@@ -67,7 +67,6 @@
 			(psnegative no)
 			(psa4output no)
 			(plot_black_and_white yes)
-			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
@@ -12509,6 +12508,14 @@
 		(uuid "365d0333-6aee-477f-bb16-fb15b784f5c6")
 	)
 	(segment
+		(start 133.490001 109.4)
+		(end 133.390001 109.3)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "3b0154ab-35c7-4458-8971-99e9eb6eec33")
+	)
+	(segment
 		(start 142.291 117.199)
 		(end 141.49 118)
 		(width 0.25)
@@ -12571,14 +12578,6 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "780eecc3-9e6d-4ec3-b901-e1b9a7371dcc")
-	)
-	(segment
-		(start 132.505636 109.3)
-		(end 132.452818 109.352818)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "7b548fd9-90f2-419f-9e3b-e1053d625ea0")
 	)
 	(segment
 		(start 163.3 116.22)
@@ -12651,14 +12650,6 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "85db0cc9-338f-4779-8b58-5e9ad3374461")
-	)
-	(segment
-		(start 133.390001 109.3)
-		(end 132.505636 109.3)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "87fd30c4-ad0b-476b-b730-122122fe9657")
 	)
 	(segment
 		(start 158.98 115.35)
@@ -12789,6 +12780,14 @@
 		(uuid "e8a9c959-b155-41fc-88be-688dfd6dfc1a")
 	)
 	(segment
+		(start 134.7 109.4)
+		(end 133.490001 109.4)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "ef8ca0b9-a7b7-4a3a-b4e8-386fa73c3412")
+	)
+	(segment
 		(start 163.4 112.8)
 		(end 163.38 112.82)
 		(width 0.25)
@@ -12885,7 +12884,7 @@
 		(uuid "ddfbace6-c518-416e-a64c-f4a1750d408a")
 	)
 	(via
-		(at 132.452818 109.352818)
+		(at 134.7 109.4)
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
@@ -13309,6 +13308,14 @@
 		(uuid "338aa12c-1657-434b-8367-0cfc825043d0")
 	)
 	(segment
+		(start 146.4 102.6)
+		(end 148.2 102.6)
+		(width 1)
+		(layer "B.Cu")
+		(net 3)
+		(uuid "3c28238b-5e15-4786-9025-c26dc6653c2f")
+	)
+	(segment
 		(start 141.315878 116.895878)
 		(end 141.442347 117.022347)
 		(width 0.5)
@@ -13491,14 +13498,6 @@
 		(layer "In1.Cu")
 		(net 3)
 		(uuid "ed8940a0-91df-47ae-8eac-c457b048fb18")
-	)
-	(segment
-		(start 146.4 102.6)
-		(end 148.2 102.6)
-		(width 1)
-		(layer "In1.Cu")
-		(net 3)
-		(uuid "f4c3f734-98a7-4ecd-9e67-96f1301a5d1b")
 	)
 	(segment
 		(start 141.442347 114.807655)
