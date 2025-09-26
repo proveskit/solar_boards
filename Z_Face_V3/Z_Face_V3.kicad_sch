@@ -6,214 +6,11 @@
 	(paper "A4")
 	(title_block
 		(title "Solar Panel Board -Z")
-		(date "2023-03-20")
+		(date "2025-09-25")
 		(rev "V3")
-		(company "CPP BroncoSpace")
+		(company "Open Source Space Foundation")
 	)
 	(lib_symbols
-		(symbol "Adafruit VEML7700-eagle-import:VEML7700"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U1"
-				(at 2.54 10.16 0)
-				(effects
-					(font
-						(size 2.54 2.159)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "VEML7700"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "VEML7700-TT:XDCR_VEML7700-TT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VEML7700_1_0"
-				(polyline
-					(pts
-						(xy -10.16 10.16) (xy 10.16 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 -10.16) (xy -10.16 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 10.16) (xy 10.16 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy -10.16 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "VEML7700"
-					(at 2.54 -14.732 0)
-					(effects
-						(font
-							(size 2.54 2.159)
-						)
-						(justify left bottom)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -2.54 0)
-					(length 5.08)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 15.24 270)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -15.24 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "VEML7700_1_1"
-				(rectangle
-					(start -10.16 10.16)
-					(end 10.16 -10.16)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 250 201 1)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -2502,6 +2299,199 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "easyeda2kicad:VEML6031X00"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -9.652 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VEML6031X00"
+				(at -9.652 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:SENSOR-SMD_VEML6031X00"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C3678616"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VEML6031X00_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -5.08 3.81)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -1.27 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "VEML6031X00_1_1"
+				(pin unspecified line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -2974,7 +2964,7 @@
 		(uuid "c0a1fe19-33ca-46a5-9b1f-f58ebfeba807")
 	)
 	(junction
-		(at 205.74 17.78)
+		(at 205.74 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09f763ae-afd2-40b6-8db2-4de384deb0b0")
@@ -3046,7 +3036,7 @@
 		(uuid "96783fec-5eca-40b0-8354-4da515d2d768")
 	)
 	(junction
-		(at 205.74 50.8)
+		(at 205.74 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6192317-9b17-4f0b-8e2b-f83a10eb35ec")
@@ -3130,6 +3120,10 @@
 		(uuid "883567bb-a88d-4892-9b72-c96bdcecaeae")
 	)
 	(no_connect
+		(at 214.63 34.29)
+		(uuid "a2d35403-604e-4034-bca5-788fbe21cd58")
+	)
+	(no_connect
 		(at 33.02 146.05)
 		(uuid "e7c04295-bf02-45ef-8d19-16b140af42c8")
 	)
@@ -3159,7 +3153,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 17.78) (xy 228.6 17.78)
+			(xy 205.74 25.4) (xy 228.6 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3189,7 +3183,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 16.51) (xy 205.74 17.78)
+			(xy 205.74 24.13) (xy 205.74 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3279,7 +3273,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 69.85) (xy 157.48 36.83)
+			(xy 157.48 69.85) (xy 157.48 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3319,7 +3313,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 38.1) (xy 228.6 50.8)
+			(xy 228.6 38.1) (xy 228.6 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3359,7 +3353,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 36.83) (xy 190.5 36.83)
+			(xy 157.48 35.56) (xy 196.85 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3459,7 +3453,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 31.75) (xy 190.5 31.75)
+			(xy 152.4 33.02) (xy 196.85 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3579,7 +3573,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 17.78) (xy 205.74 19.05)
+			(xy 205.74 25.4) (xy 205.74 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3589,7 +3583,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 50.8) (xy 205.74 50.8)
+			(xy 228.6 43.18) (xy 205.74 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3639,7 +3633,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 67.31) (xy 152.4 31.75)
+			(xy 152.4 67.31) (xy 152.4 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3699,7 +3693,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 49.53) (xy 205.74 50.8)
+			(xy 205.74 41.91) (xy 205.74 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3899,7 +3893,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 50.8) (xy 205.74 52.07)
+			(xy 205.74 43.18) (xy 205.74 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4149,7 +4143,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 17.78) (xy 228.6 30.48)
+			(xy 228.6 25.4) (xy 228.6 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5455,80 +5449,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit VEML7700-eagle-import:VEML7700")
-		(at 205.74 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02ad455b-08df-4465-998f-a0d0f8528383")
-		(property "Reference" "U1"
-			(at 208.28 24.13 0)
-			(effects
-				(font
-					(size 2.54 2.159)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "VEML7700"
-			(at 205.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "VEML7700-TT:XDCR_VEML7700-TT"
-			(at 205.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fa8fc613-ad12-435f-ad60-995eb2540612")
-		)
-		(pin "2"
-			(uuid "8ca6708b-3243-46fb-8201-a554af9b4dd2")
-		)
-		(pin "3"
-			(uuid "da94bcb0-e62a-4ad5-b1f8-009a738235ec")
-		)
-		(pin "4"
-			(uuid "f64669f5-2c01-48d8-a4ad-a5a9bc083ab4")
-		)
-		(instances
-			(project ""
-				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "solar-panel-side-Z-rescue:+3.3V-power")
 		(at 49.53 69.85 0)
 		(unit 1)
@@ -5659,7 +5579,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 205.74 52.07 0)
+		(at 205.74 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5668,7 +5588,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e3e3d2e-8110-43c9-bbcc-78038b872b2a")
 		(property "Reference" "#PWR08"
-			(at 205.74 58.42 0)
+			(at 205.74 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5677,7 +5597,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 57.15 0)
+			(at 205.74 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5685,7 +5605,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 52.07 0)
+			(at 205.74 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5694,7 +5614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 52.07 0)
+			(at 205.74 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,7 +5623,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 52.07 0)
+			(at 205.74 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6195,6 +6115,95 @@
 			(project ""
 				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:VEML6031X00")
+		(at 205.74 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "355b643b-89f1-4043-b590-9ab8c05ccfb8")
+		(property "Reference" "U1"
+			(at 219.71 27.8698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VEML6031X00"
+			(at 219.71 30.4098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:SENSOR-SMD_VEML6031X00"
+			(at 205.74 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C3678616"
+			(at 205.74 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "66eb4253-fd0a-4ff6-8044-09cecf6e6e9f")
+		)
+		(pin "1"
+			(uuid "224b5a1b-4a7d-4f1e-b7df-7dc988b9d2c3")
+		)
+		(pin "4"
+			(uuid "30b0ec8a-add9-43c3-bf46-ebfce4da1ace")
+		)
+		(pin "6"
+			(uuid "0eca07d4-5de7-4613-90f1-3a8df9aa6097")
+		)
+		(pin "3"
+			(uuid "003f2fb1-f99f-4821-a338-30d8e4c87cc0")
+		)
+		(pin "2"
+			(uuid "53cfa37a-25f8-4ef3-b3a1-afb301ca5d06")
+		)
+		(instances
+			(project ""
+				(path "/b92e10d4-ef16-4e79-8a94-1185be6812fd"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7235,7 +7244,7 @@
 	)
 	(symbol
 		(lib_id "solar-panel-side-Z-rescue:+3.3V-power")
-		(at 205.74 16.51 0)
+		(at 205.74 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7243,7 +7252,7 @@
 		(dnp no)
 		(uuid "acf9f66d-9233-4b7f-9432-c152649fac27")
 		(property "Reference" "#PWR0102"
-			(at 205.74 20.32 0)
+			(at 205.74 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7252,7 +7261,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 201.422 14.478 0)
+			(at 201.422 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7260,7 +7269,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 16.51 0)
+			(at 205.74 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7269,7 +7278,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 16.51 0)
+			(at 205.74 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7278,7 +7287,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 16.51 0)
+			(at 205.74 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
