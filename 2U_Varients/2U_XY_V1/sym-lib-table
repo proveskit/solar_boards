@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "solarcell_library")(type "KiCad")(uri "/Users/ncc-michael/GitHut/solar_boards/solarcell_library.kicad_sym")(options "")(descr ""))
+)
