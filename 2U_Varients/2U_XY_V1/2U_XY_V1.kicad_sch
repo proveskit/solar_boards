@@ -3057,6 +3057,12 @@
 		(uuid "48b2a2e1-430d-4a87-a9bc-a477594d4a7b")
 	)
 	(junction
+		(at 240.03 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "531081e6-17d6-49e5-adfc-42f574487a07")
+	)
+	(junction
 		(at 146.05 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3129,12 +3135,6 @@
 		(uuid "c620204c-ab91-4d2e-b1c0-26731807833f")
 	)
 	(junction
-		(at 240.03 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8160d9a-d7d5-4669-8942-35431a63df13")
-	)
-	(junction
 		(at 115.57 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3191,12 +3191,20 @@
 		(uuid "49b089e1-9700-45c5-b363-ab8dadc932c2")
 	)
 	(no_connect
+		(at 220.98 44.45)
+		(uuid "7ad2cf9c-be7d-4d76-ace0-637ef36b6ad2")
+	)
+	(no_connect
 		(at 66.04 153.67)
 		(uuid "7dddbda8-db15-4c51-9ead-c4963f77bb67")
 	)
 	(no_connect
 		(at 153.67 41.91)
 		(uuid "84b8e173-9114-4797-ae75-b61f0bb66989")
+	)
+	(no_connect
+		(at 220.98 35.56)
+		(uuid "8d4268b4-a120-4a1d-8b19-b7e6dcdd58ed")
 	)
 	(no_connect
 		(at 66.04 156.21)
@@ -3210,6 +3218,14 @@
 		(at 236.22 52.07)
 		(uuid "d39ea4c8-969d-4e47-af42-924ac842198b")
 	)
+	(no_connect
+		(at 220.98 62.23)
+		(uuid "db77fe32-1ff4-4627-b62d-7753cc7710cc")
+	)
+	(no_connect
+		(at 220.98 53.34)
+		(uuid "f5bbff85-b1ff-4570-b16d-aa8d211b0b17")
+	)
 	(wire
 		(pts
 			(xy 115.57 90.17) (xy 115.57 154.94)
@@ -3222,6 +3238,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 85.09) (xy 260.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03dc5190-5e71-4de0-a9be-d34bb9d846de")
+	)
+	(wire
+		(pts
 			(xy 100.33 88.9) (xy 100.33 92.71)
 		)
 		(stroke
@@ -3229,6 +3255,16 @@
 			(type default)
 		)
 		(uuid "06a7d874-4aa3-4602-a489-b65733811aff")
+	)
+	(wire
+		(pts
+			(xy 260.35 125.73) (xy 260.35 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a862018-6511-4931-9fb4-841dbaf89380")
 	)
 	(wire
 		(pts
@@ -3259,16 +3295,6 @@
 			(type default)
 		)
 		(uuid "14d1bb91-fc54-4f6d-a0c2-5d267cab7211")
-	)
-	(wire
-		(pts
-			(xy 218.44 116.84) (xy 218.44 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1512da78-b21d-4e38-8cc6-9149225e6244")
 	)
 	(wire
 		(pts
@@ -3372,16 +3398,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 144.78) (xy 218.44 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "303752ce-3131-423c-b4a7-77bf4af5ac57")
-	)
-	(wire
-		(pts
 			(xy 27.94 91.44) (xy 30.48 91.44)
 		)
 		(stroke
@@ -3389,6 +3405,16 @@
 			(type default)
 		)
 		(uuid "33aa7448-ae00-41ed-877b-7ba418e57c84")
+	)
+	(wire
+		(pts
+			(xy 240.03 87.63) (xy 240.03 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3712baf1-0aa6-4338-bb8f-b9cb7203c457")
 	)
 	(wire
 		(pts
@@ -3612,6 +3638,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 125.73) (xy 240.03 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c362b7d-6892-410c-a123-15a60fc1f425")
+	)
+	(wire
+		(pts
 			(xy 118.11 43.18) (xy 135.89 43.18)
 		)
 		(stroke
@@ -3639,16 +3675,6 @@
 			(type default)
 		)
 		(uuid "6d68a82a-0c1c-49f1-92f6-4e4353471ab8")
-	)
-	(wire
-		(pts
-			(xy 240.03 116.84) (xy 260.35 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d850c16-9dc9-4795-97f3-4f2fa7ec3ae0")
 	)
 	(wire
 		(pts
@@ -3762,6 +3788,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 85.09) (xy 218.44 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ba68bbc-7751-4708-9ebd-26889a54ecae")
+	)
+	(wire
+		(pts
 			(xy 146.05 133.35) (xy 146.05 143.51)
 		)
 		(stroke
@@ -3812,16 +3848,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 116.84) (xy 240.03 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94d51ffa-cb72-4cd2-ad37-a9603774bfb7")
-	)
-	(wire
-		(pts
 			(xy 55.88 184.15) (xy 39.37 184.15)
 		)
 		(stroke
@@ -3829,6 +3855,16 @@
 			(type default)
 		)
 		(uuid "95cd3bde-06e3-4eb0-968f-3ddb78bf5f7c")
+	)
+	(wire
+		(pts
+			(xy 218.44 125.73) (xy 218.44 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97bc28bd-9f4e-4b0b-98f8-ac003cdf289a")
 	)
 	(wire
 		(pts
@@ -3902,16 +3938,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 144.78) (xy 260.35 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a87d7845-9c80-41a2-bf17-84964b204ac7")
-	)
-	(wire
-		(pts
 			(xy 59.69 102.87) (xy 60.96 102.87)
 		)
 		(stroke
@@ -3949,16 +3975,6 @@
 			(type default)
 		)
 		(uuid "acd72566-a303-4745-bb20-95167d1b42ef")
-	)
-	(wire
-		(pts
-			(xy 240.03 119.38) (xy 240.03 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad4193b8-3509-4b82-9845-6f9aa2834fa7")
 	)
 	(wire
 		(pts
@@ -4002,13 +4018,13 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 119.38) (xy 260.35 116.84)
+			(xy 240.03 85.09) (xy 240.03 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b542ca4f-af88-4310-9e43-eb657afab2bf")
+		(uuid "b3453868-0be7-4f88-aa04-4ccf2e209b19")
 	)
 	(wire
 		(pts
@@ -4092,13 +4108,13 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 144.78) (xy 240.03 142.24)
+			(xy 260.35 87.63) (xy 260.35 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf273cfd-20a6-4ea3-ba13-954aea81d8c6")
+		(uuid "bf25b793-cb04-4917-9baf-07cc8fac0acd")
 	)
 	(wire
 		(pts
@@ -4152,16 +4168,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 144.78) (xy 260.35 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7c92c81-87bf-45dc-9295-f6793fbf8612")
-	)
-	(wire
-		(pts
 			(xy 106.68 81.28) (xy 106.68 78.74)
 		)
 		(stroke
@@ -4189,6 +4195,26 @@
 			(type default)
 		)
 		(uuid "c9bfe6a2-7b2c-46c8-b88b-00ae6b4e08bc")
+	)
+	(wire
+		(pts
+			(xy 218.44 85.09) (xy 240.03 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb157e12-1646-4b7f-9d03-512fddcc8c51")
+	)
+	(wire
+		(pts
+			(xy 240.03 144.78) (xy 260.35 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfafe334-9053-4d35-b2d5-d040a1446792")
 	)
 	(wire
 		(pts
@@ -4299,16 +4325,6 @@
 			(type default)
 		)
 		(uuid "e4c3bbd6-19c2-4a4d-a8f4-0ca65caca89a")
-	)
-	(wire
-		(pts
-			(xy 240.03 116.84) (xy 240.03 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6bf56a0-c30f-40fc-a852-10b2791caaba")
 	)
 	(wire
 		(pts
@@ -4508,28 +4524,6 @@
 	)
 	(global_label "VSOLAR"
 		(shape input)
-		(at 240.03 111.76 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2eea9603-2696-42f5-a205-45b1328fa55a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.03 102.4137 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VSOLAR"
-		(shape input)
 		(at 255.27 44.45 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4545,6 +4539,28 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSOLAR"
+		(shape input)
+		(at 240.03 80.01 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "591de907-148c-436c-b093-2049360d5e36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.03 70.6637 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5364,6 +5380,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 240.03 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f5dba3c-7584-4942-ae7b-a5d6e3288dfb")
+		(property "Reference" "SC9"
+			(at 242.7732 114.4016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 242.7732 116.713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 240.03 114.046 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 114.046 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ef16426-9952-4b04-a487-cbf2265f9bb0")
+		)
+		(pin "2"
+			(uuid "cfe578d4-820a-42f9-b049-3104ad35fdad")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "SC9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 31.75 184.15 0)
 		(unit 1)
@@ -5429,7 +5514,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 240.03 139.7 0)
+		(at 240.03 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5437,7 +5522,7 @@
 		(dnp no)
 		(uuid "1616cab2-3bfd-4ed6-a4b8-fc44c2b8c360")
 		(property "Reference" "SC4"
-			(at 242.7732 138.5316 0)
+			(at 242.7732 106.7816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5446,7 +5531,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 242.7732 140.843 0)
+			(at 242.7732 109.093 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5455,7 +5540,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 240.03 138.176 90)
+			(at 240.03 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5464,7 +5549,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 138.176 90)
+			(at 240.03 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5473,7 +5558,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 139.7 0)
+			(at 240.03 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6087,7 +6172,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 218.44 139.7 0)
+		(at 218.44 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6095,7 +6180,7 @@
 		(dnp no)
 		(uuid "35426958-34ed-4c2a-90f6-c7085747aa0b")
 		(property "Reference" "SC2"
-			(at 221.1832 138.5316 0)
+			(at 221.1832 106.7816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6104,7 +6189,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 221.1832 140.843 0)
+			(at 221.1832 109.093 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6113,7 +6198,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 218.44 138.176 90)
+			(at 218.44 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6122,7 +6207,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 218.44 138.176 90)
+			(at 218.44 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6131,7 +6216,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 218.44 139.7 0)
+			(at 218.44 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6149,6 +6234,75 @@
 			(project ""
 				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
 					(reference "SC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 260.35 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e48d7f8-5154-4264-8286-2a4a45a4bc25")
+		(property "Reference" "SC12"
+			(at 263.0932 122.0216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 263.0932 124.333 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 260.35 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb99d68b-d6f2-4bd1-af8d-415b82dc6348")
+		)
+		(pin "2"
+			(uuid "71cc62c9-1616-4b9d-8ec9-e5dd7e6b0787")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "SC12")
 					(unit 1)
 				)
 			)
@@ -6378,7 +6532,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 260.35 123.19 270)
+		(at 260.35 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6386,7 +6540,7 @@
 		(dnp no)
 		(uuid "431cdc18-0f02-4111-80d4-84fa2cf3ab36")
 		(property "Reference" "D3"
-			(at 264.16 123.19 90)
+			(at 264.16 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6394,7 +6548,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 276.86 125.73 90)
+			(at 276.86 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6403,7 +6557,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:DO-214AC"
-			(at 260.35 123.19 0)
+			(at 260.35 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6412,7 +6566,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 123.19 0)
+			(at 260.35 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6421,7 +6575,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 260.35 123.19 0)
+			(at 260.35 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6436,7 +6590,7 @@
 			(uuid "f1cf4a76-5308-4d38-986b-dabdb0712c4f")
 		)
 		(instances
-			(project ""
+			(project "2U_XY_V1"
 				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
 					(reference "D3")
 					(unit 1)
@@ -6512,6 +6666,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 215.9 44.45 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4be01f00-baa8-4a7f-afe3-72c127ef56b1")
+		(property "Reference" "J7"
+			(at 217.9828 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 217.9828 41.0464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:MountingHoles"
+			(at 215.9 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b31aaa61-879e-4736-8b45-ba8fdf55b7f1")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 31.75 156.21 0)
 		(unit 1)
@@ -6570,6 +6788,70 @@
 			(project "XY_Faces_V3"
 				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 215.9 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "642ca024-f3b3-4fa1-b274-b2f8f14cf56a")
+		(property "Reference" "J6"
+			(at 217.9828 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 217.9828 32.1564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:MountingHoles"
+			(at 215.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "011c2b89-1fca-4a17-9d43-96fc6090655c")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -7246,6 +7528,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 218.44 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90106cdc-d4d1-4e23-804d-61d8fcb79f49")
+		(property "Reference" "SC7"
+			(at 221.1832 114.4016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 221.1832 116.713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 218.44 114.046 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 114.046 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "829a7a7f-1343-4ec1-a106-3a8319fc27d2")
+		)
+		(pin "2"
+			(uuid "30d96819-fd50-4a20-b232-cb3baff1e2c4")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "SC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 218.44 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "953e0298-9e69-478e-86c8-21d924a401dd")
+		(property "Reference" "SC8"
+			(at 221.1832 122.0216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 221.1832 124.333 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 218.44 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0f73b43-c334-4fed-95ab-9167400f5d7d")
+		)
+		(pin "2"
+			(uuid "b10650ec-1e5c-4e13-8ade-4b48ac31960e")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "SC8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 240.03 152.4 0)
 		(unit 1)
@@ -7371,6 +7791,75 @@
 			(project ""
 				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
 					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 260.35 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96be9a68-ecd5-49c0-9133-7cb44a83bec6")
+		(property "Reference" "SC11"
+			(at 263.0932 114.4016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 263.0932 116.713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 260.35 114.046 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 114.046 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "625f1966-0e17-4f56-a753-19dc0524f53a")
+		)
+		(pin "2"
+			(uuid "3e26fa19-7a0e-46d6-8011-947b1aef42ab")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "SC11")
 					(unit 1)
 				)
 			)
@@ -7694,6 +8183,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 240.03 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2220503-67ae-4233-8379-2ca186d2ae86")
+		(property "Reference" "SC10"
+			(at 242.7732 122.0216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 242.7732 124.333 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 240.03 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bc90cd5-2d54-4a40-a4f9-70913ecc4531")
+		)
+		(pin "2"
+			(uuid "f31cb38b-0bbe-48ef-99ff-e9d742166066")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "SC10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 146.05 175.26 0)
 		(unit 1)
@@ -7891,7 +8449,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 218.44 123.19 270)
+		(at 218.44 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7899,7 +8457,7 @@
 		(dnp no)
 		(uuid "b9dc6823-aafa-497c-9776-6774d526f030")
 		(property "Reference" "D1"
-			(at 222.25 123.19 90)
+			(at 222.25 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7907,7 +8465,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 234.95 125.73 90)
+			(at 234.95 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7916,7 +8474,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:DO-214AC"
-			(at 218.44 123.19 0)
+			(at 218.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7925,7 +8483,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 218.44 123.19 0)
+			(at 218.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7934,7 +8492,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 218.44 123.19 0)
+			(at 218.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7949,7 +8507,7 @@
 			(uuid "6cf3bd63-98cc-4760-8de4-2f12c2b6fb30")
 		)
 		(instances
-			(project ""
+			(project "2U_XY_V1"
 				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
 					(reference "D1")
 					(unit 1)
@@ -8221,34 +8779,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 260.35 132.08 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 215.9 62.23 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e0fc0779-d4a1-41b2-bd4e-edb05dcac20e")
-		(property "Reference" "SC5"
-			(at 263.0932 130.9116 0)
+		(uuid "dd0f5657-e6be-47e4-afa9-b56e7fb42527")
+		(property "Reference" "J9"
+			(at 217.9828 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SM101K07TF"
-			(at 263.0932 133.223 0)
+		(property "Value" "Conn_01x01"
+			(at 217.9828 58.8264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 260.35 130.556 90)
+		(property "Footprint" "SolarPanelBoards:MountingHoles"
+			(at 215.9 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8257,7 +8813,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 130.556 90)
+			(at 215.9 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8266,7 +8822,73 @@
 			)
 		)
 		(property "Description" ""
-			(at 260.35 132.08 0)
+			(at 215.9 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "002a3290-26cd-4925-8100-c4cc6448217c")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 260.35 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0fc0779-d4a1-41b2-bd4e-edb05dcac20e")
+		(property "Reference" "SC5"
+			(at 263.0932 99.1616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 263.0932 101.473 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 260.35 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8450,34 +9072,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Solar_Cell")
-		(at 218.44 132.08 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 215.9 53.34 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ef587138-0851-4854-8fea-6ccde14b6b3a")
-		(property "Reference" "SC1"
-			(at 221.1832 130.9116 0)
+		(uuid "e5cfbb01-07d3-4c6b-831d-fab754632675")
+		(property "Reference" "J8"
+			(at 217.9828 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SM101K07TF"
-			(at 221.1832 133.223 0)
+		(property "Value" "Conn_01x01"
+			(at 217.9828 49.9364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 218.44 130.556 90)
+		(property "Footprint" "SolarPanelBoards:MountingHoles"
+			(at 215.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8486,7 +9106,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 218.44 130.556 90)
+			(at 215.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8495,7 +9115,73 @@
 			)
 		)
 		(property "Description" ""
-			(at 218.44 132.08 0)
+			(at 215.9 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a212321-78ed-47c3-90bf-2d12f29a1a62")
+		)
+		(instances
+			(project "2U_XY_V1"
+				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Solar_Cell")
+		(at 218.44 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef587138-0851-4854-8fea-6ccde14b6b3a")
+		(property "Reference" "SC1"
+			(at 221.1832 99.1616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SM101K07TF"
+			(at 221.1832 101.473 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
+			(at 218.44 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8520,7 +9206,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 260.35 139.7 0)
+		(at 260.35 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8528,7 +9214,7 @@
 		(dnp no)
 		(uuid "f2eb85ae-8770-45f8-a3ab-0e36e46f3efa")
 		(property "Reference" "SC6"
-			(at 263.0932 138.5316 0)
+			(at 263.0932 106.7816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8537,7 +9223,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 263.0932 140.843 0)
+			(at 263.0932 109.093 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8546,7 +9232,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 260.35 138.176 90)
+			(at 260.35 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8555,7 +9241,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 138.176 90)
+			(at 260.35 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8564,7 +9250,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 260.35 139.7 0)
+			(at 260.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8653,7 +9339,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 240.03 132.08 0)
+		(at 240.03 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8661,7 +9347,7 @@
 		(dnp no)
 		(uuid "f766531e-1994-47d0-a497-a403876f4cc9")
 		(property "Reference" "SC3"
-			(at 242.7732 130.9116 0)
+			(at 242.7732 99.1616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8670,7 +9356,7 @@
 			)
 		)
 		(property "Value" "SM101K07TF"
-			(at 242.7732 133.223 0)
+			(at 242.7732 101.473 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8679,7 +9365,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:KXOB101K08F-TR"
-			(at 240.03 130.556 90)
+			(at 240.03 98.806 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8688,7 +9374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 130.556 90)
+			(at 240.03 98.806 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8697,7 +9383,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 132.08 0)
+			(at 240.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8787,7 +9473,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 240.03 123.19 270)
+		(at 240.03 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8795,7 +9481,7 @@
 		(dnp no)
 		(uuid "f950820a-7c9a-4bb1-abb3-c9bfb2ead70e")
 		(property "Reference" "D2"
-			(at 243.84 123.19 90)
+			(at 243.84 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,7 +9489,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 256.54 125.73 90)
+			(at 256.54 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8812,7 +9498,7 @@
 			)
 		)
 		(property "Footprint" "SolarPanelBoards:DO-214AC"
-			(at 240.03 123.19 0)
+			(at 240.03 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8821,7 +9507,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 123.19 0)
+			(at 240.03 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8830,7 +9516,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 123.19 0)
+			(at 240.03 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8845,7 +9531,7 @@
 			(uuid "838c9957-cc20-49a5-8f17-a6cc2f6dbee3")
 		)
 		(instances
-			(project ""
+			(project "2U_XY_V1"
 				(path "/eef9f006-370f-4adf-854d-7bd60dbbe9e7"
 					(reference "D2")
 					(unit 1)
