@@ -311,4 +311,15 @@
 		(uuid "12044cb2-7ca4-4282-8787-4e76c3c6f0fe")
 	)
 	(embedded_fonts no)
+	(model "/Users/ncc-michael/GitHut/solar_boards/3D Models/SM531K10T.step"
+		(offset
+			(xyz -24.5 12 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
