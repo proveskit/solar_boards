@@ -4399,6 +4399,16 @@
 		)
 		(uuid "2edc1918-24aa-47e7-8a18-560cd4417bcd")
 	)
+	(label "SOL_OUT"
+		(at 241.3 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46cb7b65-b12b-4fe4-b6cc-fa3f8e76bc76")
+	)
 	(label "SCLIN"
 		(at 50.8 91.44 0)
 		(effects
