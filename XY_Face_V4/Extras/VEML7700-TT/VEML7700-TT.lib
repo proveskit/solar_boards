@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# VEML7700-TT
+#
+DEF VEML7700-TT U 0 40 Y Y 1 L N
+F0 "U" -300 425 50 H V L BNN
+F1 "VEML7700-TT" -300 -400 50 H V L BNN
+F2 "XDCR_VEML7700-TT" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "VEML7700-TT" 0 0 50 H I L BNN "SNAPEDA_PN"
+F5 "2.35 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F6 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F7 "Vishay" 0 0 50 H I L BNN "MANUFACTURER"
+F8 "1.6" 0 0 50 H I L BNN "PARTREV"
+DRAW
+S -300 -300 300 400 0 0 10 f
+X SCL 1 -500 100 200 R 40 40 0 0 I C
+X VDD 2 500 300 200 L 40 40 0 0 W 
+X GND 3 500 -200 200 L 40 40 0 0 W 
+X SDA 4 -500 0 200 R 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library
