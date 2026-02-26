@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.24
         }
       },
       "diff_pair_dimensions": [
@@ -61,16 +61,16 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|136937500|113887500|4f76c1b4-9ddc-4f46-b171-cc7f35f2dd47|8223e592-f1f7-4c85-b72d-6004a50dc2d8",
-          "Pad to Pad of 0.15m is okay at JLC"
+          "clearance|128487500|117562500|bffcbbcd-bc34-4f0a-a262-9ed469d5bf5c|257787d5-dda2-4609-9ed5-843e272bff68",
+          "Accepting Pad to Pad "
         ],
         [
-          "clearance|138362500|114212500|257787d5-dda2-4609-9ed5-843e272bff68|5f54c1dd-3bee-4111-b29f-fee1dc913eab",
-          "Pad to Pad of 0.15m is okay at JLC"
+          "clearance|128987500|117562500|257787d5-dda2-4609-9ed5-843e272bff68|5f54c1dd-3bee-4111-b29f-fee1dc913eab",
+          "Accepting Pad to Pad"
         ],
         [
-          "clearance|138362500|114712500|bffcbbcd-bc34-4f0a-a262-9ed469d5bf5c|257787d5-dda2-4609-9ed5-843e272bff68",
-          "Pad to Pad of 0.15m is okay at JLC"
+          "clearance|129312500|116137500|4f76c1b4-9ddc-4f46-b171-cc7f35f2dd47|8223e592-f1f7-4c85-b72d-6004a50dc2d8",
+          ""
         ]
       ],
       "meta": {
@@ -208,6 +208,7 @@
       ],
       "track_widths": [
         0.0,
+        0.1524,
         0.2,
         0.25,
         0.4,
