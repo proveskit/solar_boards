@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "solar_parts")(type "KiCad")(uri "/Users/ncc-michael/GitHut/solar_boards/solar_parts.kicad_sym")(options "")(descr ""))
+)
