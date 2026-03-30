@@ -160,7 +160,7 @@
 		(path "/00000000-0000-0000-0000-0000627a5498")
 		(sheetname "/")
 		(sheetfile "XY_Face_V4nb.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.85 0)
@@ -264,7 +264,7 @@
 		(path "/00000000-0000-0000-0000-0000627a5849")
 		(sheetname "/")
 		(sheetfile "XY_Face_V4nb.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.85 0)
@@ -368,7 +368,7 @@
 		(path "/00000000-0000-0000-0000-0000627a5c0a")
 		(sheetname "/")
 		(sheetfile "XY_Face_V4nb.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.85 0)
@@ -472,7 +472,7 @@
 		(path "/00000000-0000-0000-0000-0000627a649f")
 		(sheetname "/")
 		(sheetfile "XY_Face_V4nb.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.85 0)
@@ -579,7 +579,7 @@
 		(path "/46fa1349-179e-4101-9b07-ead856390db1")
 		(sheetname "/")
 		(sheetfile "XY_Face_V4nb.kicad_sch")
-		(attr smd exclude_from_pos_files)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(pad "1" smd roundrect
 			(at 0 0 90)
 			(size 2.5 2.5)
@@ -947,7 +947,7 @@
 		(path "/6f1a9d3d-f25c-4e62-93c4-19325c1cdd6b")
 		(sheetname "/")
 		(sheetfile "XY_Face_V4nb.kicad_sch")
-		(attr smd exclude_from_pos_files)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(pad "1" smd roundrect
 			(at 0 0 90)
 			(size 2.5 2.5)
@@ -2734,10 +2734,22 @@
 				)
 			)
 		)
+		(property "LCSC" "C26083"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0dab4e13-4b4d-42e4-8090-eee3d583f5d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/87d74fdf-c1e2-4df6-99c9-1180eb0b7aa2")
 		(sheetname "/")
 		(sheetfile "XY_Face_V4nb.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
 			(end 0.153641 -0.38)
