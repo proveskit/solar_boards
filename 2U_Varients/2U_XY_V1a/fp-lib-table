@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Solar_Cell_Library")(type "KiCad")(uri "/Users/ncc-michael/GitHut/solar_boards/Solar_Cell_Library.pretty")(options "")(descr ""))
+)
