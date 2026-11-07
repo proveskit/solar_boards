@@ -2166,7 +2166,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda2kicad:TCA4311ADGKR"
+		(symbol "easyeda2kicad:TCA4307DGKR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2178,7 +2178,7 @@
 					)
 				)
 			)
-			(property "Value" "TCA4311ADGKR"
+			(property "Value" "TCA4307DGKR"
 				(at 0 11.43 0)
 				(effects
 					(font
@@ -2195,7 +2195,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Interface-ICs_TI_TCA4311ADGKR_TCA4311ADGKR_C130025.html"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca4307.pdf"
 				(at 0 -16.51 0)
 				(effects
 					(font
@@ -2213,7 +2213,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C130025"
+			(property "LCSC Part" "C880333"
 				(at 0 -19.05 0)
 				(effects
 					(font
@@ -2222,7 +2222,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TCA4311ADGKR_0_1"
+			(symbol "TCA4307DGKR_0_1"
 				(rectangle
 					(start -10.16 8.89)
 					(end 10.16 -8.89)
@@ -7459,7 +7459,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DF11-2DSA-4DP"
+		(property "Value" "DF11-6DP-2DSA(08)"
 			(at 26.416 82.296 0)
 			(effects
 				(font
@@ -7495,7 +7495,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C2833085"
+		(property "LCSC Part" "C506668"
 			(at 35.56 109.22 0)
 			(effects
 				(font
@@ -7532,7 +7532,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TCA4311ADGKR")
+		(lib_id "easyeda2kicad:TCA4307DGKR")
 		(at 76.2 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7549,7 +7549,7 @@
 				)
 			)
 		)
-		(property "Value" "TCA4311ADGKR"
+		(property "Value" "TCA4307DGKR"
 			(at 76.2 85.09 0)
 			(effects
 				(font
@@ -7566,7 +7566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Interface-ICs_TI_TCA4311ADGKR_TCA4311ADGKR_C130025.html"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca4307.pdf"
 			(at 76.2 113.03 0)
 			(effects
 				(font
@@ -7584,7 +7584,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C130025"
+		(property "LCSC Part" "C880333"
 			(at 76.2 115.57 0)
 			(effects
 				(font
