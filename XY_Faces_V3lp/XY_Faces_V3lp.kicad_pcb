@@ -1675,7 +1675,7 @@
 				)
 			)
 		)
-		(property "Value" "TCA4311ADGKR"
+		(property "Value" "TCA4307DGKR"
 			(at 0 6.15 90)
 			(layer "F.Fab")
 			(uuid "447f4ebf-02b2-48e5-8379-89ac106507cd")
@@ -1686,7 +1686,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Interface-ICs_TI_TCA4311ADGKR_TCA4311ADGKR_C130025.html"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca4307.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1710,7 +1710,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C130025"
+		(property "LCSC Part" "C880333"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6508,7 +6508,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "DF11-2DSA-4DP"
+		(property "Value" "DF11-6DP-2DSA(08)"
 			(at 2 -4.699999 0)
 			(layer "B.Fab")
 			(uuid "318c3ead-aa05-44a7-86f6-f562270d6cb8")
@@ -6548,7 +6548,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC Part" "C2833085"
+		(property "LCSC Part" "C506668"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
