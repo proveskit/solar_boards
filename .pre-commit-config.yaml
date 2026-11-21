@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.4
+    hooks:
+      - id: ruff
+        files: ^lib/
+      - id: ruff-format
+        files: ^lib/
+  - repo: local
+    hooks:
+      - id: proves-lib-check
+        name: PROVES library spec check
+        entry: python3 lib/tools/check.py
+        language: system
+        files: ^lib/
+        pass_filenames: false

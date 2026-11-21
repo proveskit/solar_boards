@@ -1,0 +1,99 @@
+(footprint "MountingHole_3.2mm_M3_ISO7380_Pad"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "M3 mounting hole, plated pad for an ISO 7380 button head. Source: ISO 7380-1 button head screw, M3 head diameter dk max 5.7; ISO 273 fine clearance hole 3.2, p.Table 1, dk max, M3")
+	(tags "mounting hole M3 ISO7380")
+	(property "Reference" "REF**"
+		(at 0 -3.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ab71395e-7b08-5a06-8dbb-03b87053fd0f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MountingHole_3.2mm_M3_ISO7380_Pad"
+		(at 0 3.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4f79ef44-f01d-5f6c-b7c6-e6bca886fef1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.iso.org/standard/53582.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "22c1477b-85b6-51bc-8403-17e352dd8d89")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "M3 mounting hole, plated pad for an ISO 7380 button head"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "296d4e91-b98c-5030-924c-ce4e22113aae")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.1 -3.1)
+		(end 3.1 3.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "64d00438-f283-560a-8a37-b7fd1999ea81")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.85 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "63a79e71-c254-51b7-b6f0-521075c9731b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "607e4476-720a-51d6-b950-24fa278fd083")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 5.7 5.7)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e86ed9be-411a-5d31-af65-fd24290bed4b")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,165 @@
+(footprint "TI_DRL0006A_SOT-563"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TI DRL0006A SOT-563 1.6 x 1.2 mm, 0.5 mm pitch. Source: TI TMP112 datasheet SBOS473L, p.40, DRL0006A example board layout 4223266/C. 6X (0.67) x 6X (0.3), 4X (0.5) pitch, (1.48) row span, R0.05")
+	(tags "SOT-563 DRL TI")
+	(property "Reference" "REF**"
+		(at 0 -1.85 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a636e2e4-0023-5a11-ad9e-4bbf8f95a3b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TI_DRL0006A_SOT-563"
+		(at 0 1.85 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7c9489b7-437e-5d43-acb1-7e6ccabc7ed7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp112.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa41e2de-15a0-5251-925b-c8b440311221")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "TI DRL0006A SOT-563 1.6 x 1.2 mm, 0.5 mm pitch"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eaa034a5-4995-5ac3-a782-d4ec43040e6b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.14 -0.86)
+		(end 0.14 -0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e2dd659a-9b58-5d3e-a968-49e30778b5db")
+	)
+	(fp_line
+		(start -0.14 0.86)
+		(end 0.14 0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5f49b84e-f42b-5efb-86fb-0b23ca17ea14")
+	)
+	(fp_circle
+		(center -1.48 -0.5)
+		(end -1.405 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "876f4408-07c9-5c65-87b8-b02f98fc4130")
+	)
+	(fp_rect
+		(start -1.33 -1.05)
+		(end 1.33 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0b4b7fa6-2b80-5c85-a153-6d1f6505e9a0")
+	)
+	(fp_poly
+		(pts
+			(xy -0.6 -0.5) (xy -0.3 -0.8) (xy 0.6 -0.8) (xy 0.6 0.8) (xy -0.6 0.8)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "edd81424-e53c-5ab2-9f85-6c63951e1105")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "05c65dd9-2b51-532f-8b13-306aec232170")
+		(effects
+			(font
+				(size 0.36 0.36)
+				(thickness 0.054)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.74 -0.5)
+		(size 0.67 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.166667)
+		(uuid "e1890c9a-ea02-5020-90b6-3cc3207c98fe")
+	)
+	(pad "2" smd roundrect
+		(at -0.74 0)
+		(size 0.67 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.166667)
+		(uuid "97d17b6e-6986-58ac-8d6f-e99719316ebb")
+	)
+	(pad "3" smd roundrect
+		(at -0.74 0.5)
+		(size 0.67 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.166667)
+		(uuid "7802a18f-f813-5292-81b6-54b5981252a0")
+	)
+	(pad "4" smd roundrect
+		(at 0.74 0.5)
+		(size 0.67 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.166667)
+		(uuid "d7d6b437-f461-521b-ae92-36b2436f246a")
+	)
+	(pad "5" smd roundrect
+		(at 0.74 0)
+		(size 0.67 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.166667)
+		(uuid "046980e1-7f4c-5227-9ba7-42bb728df67c")
+	)
+	(pad "6" smd roundrect
+		(at 0.74 -0.5)
+		(size 0.67 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.166667)
+		(uuid "0e39a6d0-6e8c-591d-be7e-8cbf350600b1")
+	)
+	(embedded_fonts no)
+)

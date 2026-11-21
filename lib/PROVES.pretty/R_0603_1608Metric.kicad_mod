@@ -1,0 +1,126 @@
+(footprint "R_0603_1608Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Chip resistor 0603 (1608 metric), reflow land. Source: Vishay D/CRCW e3 thick film chip resistors, doc 20035, p.11, Recommended solder pad dimensions, reflow soldering (G, Y, X, Z). G=0.75 Y=0.75 X=1.00 Z=2.25")
+	(tags "resistor 0603 1608")
+	(property "Reference" "REF**"
+		(at 0 -1.55 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "80a1fd35-daa4-544c-a47c-98c5af9dd816")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R_0603_1608Metric"
+		(at 0 1.55 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ba650801-2296-5c30-8f21-9ec405c3133b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45125f14-1a0e-5568-a681-4ba11407e51d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Chip resistor 0603 (1608 metric), reflow land"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c7e7792-63a0-5ee9-83ba-0f294e41eb44")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.11 -0.48)
+		(end 0.11 -0.48)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3370a96a-4073-5997-a945-5b6c2d6f2433")
+	)
+	(fp_line
+		(start -0.11 0.48)
+		(end 0.11 0.48)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a295f7a1-6226-5faa-9654-17a87af84f57")
+	)
+	(fp_rect
+		(start -1.38 -0.75)
+		(end 1.38 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "327dd7f8-2e6f-5f96-bd3b-825d6b6ef5dc")
+	)
+	(fp_poly
+		(pts
+			(xy -0.78 -0.42) (xy 0.78 -0.42) (xy 0.78 0.42) (xy -0.78 0.42)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5b71ae6a-0fca-55fa-b015-a1e07fdad696")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "009523ac-41ce-598f-981f-d89e19d6a3e3")
+		(effects
+			(font
+				(size 0.26 0.26)
+				(thickness 0.039)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.75 0)
+		(size 0.75 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b3af5871-6797-52d6-9614-19bce39abc03")
+	)
+	(pad "2" smd roundrect
+		(at 0.75 0)
+		(size 0.75 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "40d8e8a6-5c95-5208-93a8-0a9ea94edff7")
+	)
+	(embedded_fonts no)
+)

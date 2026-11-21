@@ -1,0 +1,106 @@
+(footprint "R_0402_1005Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Chip resistor 0402 (1005 metric), reflow land. Source: Vishay D/CRCW e3 thick film chip resistors, doc 20035, p.11, Recommended solder pad dimensions, reflow soldering (G, Y, X, Z). G=0.45 Y=0.6 X=0.6 Z=1.65")
+	(tags "resistor 0402 1005")
+	(property "Reference" "REF**"
+		(at 0 -1.35 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "bd9beba1-0925-5994-833d-e94a142d2441")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R_0402_1005Metric"
+		(at 0 1.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "84016e5f-d173-55a1-b540-8cfd64277ec4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3da3028b-b8d1-5337-acde-1c9d28fbbff6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Chip resistor 0402 (1005 metric), reflow land"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b001af77-1afd-5a52-99ad-f6d7be042282")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.08 -0.55)
+		(end 1.08 0.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0e19e3aa-2694-5f0a-b87f-745e522120f5")
+	)
+	(fp_poly
+		(pts
+			(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8e847d39-f224-5ce2-b597-1d782580d616")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1c8fae35-405c-59b1-bd62-47914de05546")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.038)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.525 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "0acea5e2-532d-5bf2-9e4c-2a586dcf90e0")
+	)
+	(pad "2" smd roundrect
+		(at 0.525 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "8737e31b-8112-5b3e-b3a3-a90095fc651c")
+	)
+	(embedded_fonts no)
+)

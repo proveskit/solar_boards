@@ -1,0 +1,177 @@
+(footprint "D_SMA_DO-214AC"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "DO-214AC (SMA) diode, pad 1 cathode. Source: Comchip CDBA240LL-HF datasheet Rev D (QW-JL008), p.4, Suggested PAD Layout, DO-214AC (SMA). A=4.10 B=2.60 C=1.70 D=6.70 E=1.50")
+	(tags "diode SMA DO-214AC")
+	(property "Reference" "REF**"
+		(at 0 -2.35 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b59c561d-8e3c-5a6d-882f-418b5868dcc7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D_SMA_DO-214AC"
+		(at 0 2.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5268c6ca-e767-5448-81c0-f8023364960d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0ad6c82af01d682deff9bf6691cf993a.pdf?productCode=C2886093"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a52c3fc-4c87-5c3e-a5e0-e0f45356bb3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "DO-214AC (SMA) diode, pad 1 cathode"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cea392e4-8d88-5a81-b79a-6a7ef1624cc4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.21 -1.36)
+		(end -2.21 -1.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "efe746cf-0512-5ea7-b867-6a4c3cec215f")
+	)
+	(fp_line
+		(start -2.21 -1.36)
+		(end 2.21 -1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "27c414e7-0f55-570e-a907-189d6de6f33c")
+	)
+	(fp_line
+		(start -2.21 1.11)
+		(end -2.21 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11b186f3-0228-5f8f-ac81-22cad127258e")
+	)
+	(fp_line
+		(start -2.21 1.36)
+		(end 2.21 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ca5ea33b-21f8-5d44-89b6-b66141d7116b")
+	)
+	(fp_line
+		(start 2.21 -1.36)
+		(end 2.21 -1.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2b92cea5-9ec5-5a21-895a-2f31312690df")
+	)
+	(fp_line
+		(start 2.21 1.11)
+		(end 2.21 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f9f24af6-8dc5-5d35-a0a1-4456327a9aed")
+	)
+	(fp_circle
+		(center -3.76 0)
+		(end -3.685 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "ae99690c-1fe3-581f-8672-826ecc0289d0")
+	)
+	(fp_rect
+		(start -3.6 -1.55)
+		(end 3.6 1.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "59f9269e-e6f8-5c3b-a8d6-fa9e7c1849a2")
+	)
+	(fp_poly
+		(pts
+			(xy -2.15 -0.65) (xy -1.5 -1.3) (xy 2.15 -1.3) (xy 2.15 1.3) (xy -2.15 1.3)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cfd1e86c-ca5d-5d38-b134-0123bfc1a25d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0d4379f5-32d7-5289-a5e5-c59e7a390a2f")
+		(effects
+			(font
+				(size 0.78 0.78)
+				(thickness 0.117)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.05 0)
+		(size 2.6 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.147059)
+		(uuid "56f00b9a-442b-54b0-a96f-9d57751bbf84")
+	)
+	(pad "2" smd roundrect
+		(at 2.05 0)
+		(size 2.6 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.147059)
+		(uuid "ae70a7a6-a892-54b8-b954-7b8e9300e16d")
+	)
+	(embedded_fonts no)
+)
