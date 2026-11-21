@@ -19,7 +19,7 @@ REPO = LIB_DIR.parent
 sys.path.insert(0, str(LIB_DIR))
 sys.path.insert(0, str(LIB_DIR / "tools"))
 
-from sexpr import child, children, parse, prop  # noqa: E402
+from sexpr import child, children, parse, prop, value  # noqa: E402
 
 import parts  # noqa: E402
 
@@ -39,12 +39,9 @@ REASONS = {
     "house pads.",
     "Hirose_DF11-4DP-2DSA_2x02_P2.00mm_Vertical": "Hirose hole 0.8 +0.1/-0 drilled at 0.85 with a 1.45 round pad "
     "(SPEC THT rule) replaces KiCad's 1.2 x 1.65 oval.",
-    "Hirose_DF11-6DP-2DSA_2x03_P2.00mm_Vertical": "As DF11-4DP. The board footprint is also a mirror image of the "
-    "Hirose top view: contact 2 sits on the wrong side of contact 1.",
+    "Hirose_DF11-6DP-2DSA_2x03_P2.00mm_Vertical": "As DF11-4DP.",
     "Molex_PicoLock_504050-0691_1x06_P1.50mm_Horizontal": "Molex recommended pattern: signal pads 0.6 x 1.0 "
-    "(easyeda copy used 1.5 long), nails numbered MP. Both "
-    "board copies are mirror images of the Molex top view and "
-    "of KiCad's stock part: pad 1 sits where contact 6 lands.",
+    "(easyeda copy used 1.5 long), nails numbered MP.",
     "MountingHole_3.2mm_M3_ISO7380_Pad": "Pad is the ISO 7380-1 M3 head diameter, unchanged.",
     "MountingHole_3.2mm_M3_DIN965_Pad": "Pad is the ISO 7046-1 (DIN 965) M3 actual head diameter 5.5, not KiCad's 5.6.",
     "TI_DGS0010A_VSSOP-10_3x3mm_P0.5mm": "TI DGS land; KiCad stock already matched TI within rounding.",
@@ -71,6 +68,8 @@ def board_footprints(board):
     for fp in children(tree, "footprint"):
         at = child(fp, "at")
         rot = float(at[3]) if len(at) > 3 else 0.0
+        # KiCad stores a back-side footprint's pads already flipped about x; undo it to compare in the part's own frame.
+        flip = -1.0 if value(fp, "layer") == "B.Cu" else 1.0
         pads = []
         for p in children(fp, "pad"):
             pat, size, drill = child(p, "at"), child(p, "size"), child(p, "drill")
@@ -82,7 +81,7 @@ def board_footprints(board):
                 dict(
                     number=p[1],
                     x=float(pat[1]),
-                    y=float(pat[2]),
+                    y=flip * float(pat[2]),
                     w=w,
                     h=h,
                     shape=str(p[3]),

@@ -366,54 +366,48 @@
   "old": "Connector_Hirose:Hirose_DF11-6DP-2DSA_2x03_P2.00mm_Vertical",
   "new": "PROVES:Hirose_DF11-6DP-2DSA_2x03_P2.00mm_Vertical",
   "rotation_deg": 0,
-  "rms_mm": 2.0,
+  "rms_mm": 0.0,
   "matched_by": "number",
-  "board_is_mirror_image": true,
+  "board_is_mirror_image": false,
   "pads_changed": 6,
   "deltas": [
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 2.0,
     "size": "1.2 x 1.65 -> 1.45 x 1.45"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 2.0,
     "size": "1.2 x 1.65 -> 1.45 x 1.45",
     "shape": "oval -> circle"
    },
    {
     "pad": "3",
     "old_pad": "3",
-    "moved_mm": 2.0,
     "size": "1.2 x 1.65 -> 1.45 x 1.45",
     "shape": "oval -> circle"
    },
    {
     "pad": "4",
     "old_pad": "4",
-    "moved_mm": 2.0,
     "size": "1.2 x 1.65 -> 1.45 x 1.45",
     "shape": "oval -> circle"
    },
    {
     "pad": "5",
     "old_pad": "5",
-    "moved_mm": 2.0,
     "size": "1.2 x 1.65 -> 1.45 x 1.45",
     "shape": "oval -> circle"
    },
    {
     "pad": "6",
     "old_pad": "6",
-    "moved_mm": 2.0,
     "size": "1.2 x 1.65 -> 1.45 x 1.45",
     "shape": "oval -> circle"
    }
   ],
-  "reason": "As DF11-4DP. The board footprint is also a mirror image of the Hirose top view: contact 2 sits on the wrong side of contact 1."
+  "reason": "As DF11-4DP."
  },
  {
   "board": "XY_Face_V4",
@@ -421,65 +415,65 @@
   "old": "Package_TO_SOT_SMD:TDSON-8-1",
   "new": "PROVES:TI_DNK0008A_VSON-CLIP-8_5x6mm_P1.27mm",
   "rotation_deg": 180,
-  "rms_mm": 2.358,
+  "rms_mm": 2.406,
   "matched_by": "number",
   "board_is_mirror_image": false,
   "pads_changed": 14,
   "deltas": [
    {
-    "pad": "6",
-    "old_pad": "",
-    "moved_mm": 1.533,
-    "size": "1.5 x 1.5 -> 0.59 x 0.71",
-    "renumbered": "(none) -> 6"
-   },
-   {
     "pad": "7",
     "old_pad": "",
-    "moved_mm": 1.661,
+    "moved_mm": 1.526,
     "size": "1.5 x 1.5 -> 0.59 x 0.71",
     "renumbered": "(none) -> 7"
    },
    {
+    "pad": "6",
+    "old_pad": "",
+    "moved_mm": 1.526,
+    "size": "1.5 x 1.5 -> 0.59 x 0.71",
+    "renumbered": "(none) -> 6"
+   },
+   {
     "pad": "8",
     "old_pad": "",
-    "moved_mm": 2.759,
+    "moved_mm": 3.033,
     "size": "3.75 x 4.41 -> 0.59 x 0.71",
     "shape": "custom -> roundrect",
     "renumbered": "(none) -> 8"
    },
    {
-    "pad": "3",
-    "old_pad": "",
-    "moved_mm": 2.733,
-    "size": "1.5 x 1.5 -> 1.372 x 0.71",
-    "renumbered": "(none) -> 3"
-   },
-   {
     "pad": "2",
     "old_pad": "",
-    "moved_mm": 2.807,
+    "moved_mm": 2.729,
     "size": "1.5 x 1.5 -> 1.372 x 0.71",
     "renumbered": "(none) -> 2"
    },
    {
-    "pad": "4",
+    "pad": "3",
     "old_pad": "",
-    "moved_mm": 1.399,
-    "size": "0.75 x 0.5 -> 1.372 x 0.71",
-    "renumbered": "(none) -> 4"
+    "moved_mm": 2.729,
+    "size": "1.5 x 1.5 -> 1.372 x 0.71",
+    "renumbered": "(none) -> 3"
    },
    {
     "pad": "1",
     "old_pad": "",
-    "moved_mm": 2.447,
+    "moved_mm": 1.315,
     "size": "0.75 x 0.5 -> 1.372 x 0.71",
     "renumbered": "(none) -> 1"
    },
    {
+    "pad": "4",
+    "old_pad": "",
+    "moved_mm": 2.86,
+    "size": "0.75 x 0.5 -> 1.372 x 0.71",
+    "renumbered": "(none) -> 4"
+   },
+   {
     "pad": "5",
     "old_pad": "",
-    "moved_mm": 2.911,
+    "moved_mm": 2.764,
     "size": "0.75 x 0.5 -> 4.44 x 4.52",
     "shape": "roundrect -> custom",
     "renumbered": "(none) -> 5"
@@ -516,51 +510,45 @@
   "ref": "U6",
   "old": "easyeda2kicad:CONN-SMD_6P-P1.50_A1501WRB-S-6P",
   "new": "PROVES:Molex_PicoLock_504050-0691_1x06_P1.50mm_Horizontal",
-  "rotation_deg": 0,
-  "rms_mm": 4.437,
+  "rotation_deg": 180,
+  "rms_mm": 0.005,
   "matched_by": "number",
-  "board_is_mirror_image": true,
+  "board_is_mirror_image": false,
   "pads_changed": 8,
   "deltas": [
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 7.5,
     "size": "0.6 x 1.5 -> 0.6 x 1",
     "shape": "rect -> roundrect"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 4.5,
     "size": "0.6 x 1.5 -> 0.6 x 1",
     "shape": "rect -> roundrect"
    },
    {
     "pad": "3",
     "old_pad": "3",
-    "moved_mm": 1.5,
     "size": "0.6 x 1.5 -> 0.6 x 1",
     "shape": "rect -> roundrect"
    },
    {
     "pad": "4",
     "old_pad": "4",
-    "moved_mm": 1.5,
     "size": "0.6 x 1.5 -> 0.6 x 1",
     "shape": "rect -> roundrect"
    },
    {
     "pad": "5",
     "old_pad": "5",
-    "moved_mm": 4.5,
     "size": "0.6 x 1.5 -> 0.6 x 1",
     "shape": "rect -> roundrect"
    },
    {
     "pad": "6",
     "old_pad": "6",
-    "moved_mm": 7.5,
     "size": "0.6 x 1.5 -> 0.6 x 1",
     "shape": "rect -> roundrect"
    },
@@ -579,7 +567,7 @@
     "renumbered": "8 -> MP"
    }
   ],
-  "reason": "Molex recommended pattern: signal pads 0.6 x 1.0 (easyeda copy used 1.5 long), nails numbered MP. Both board copies are mirror images of the Molex top view and of KiCad's stock part: pad 1 sits where contact 6 lands."
+  "reason": "Molex recommended pattern: signal pads 0.6 x 1.0 (easyeda copy used 1.5 long), nails numbered MP."
  },
  {
   "board": "XY_Faces_V3lp",
@@ -809,46 +797,40 @@
   "ref": "J1",
   "old": "Molex 6 pos:MOLEX_5040500691",
   "new": "PROVES:Molex_PicoLock_504050-0691_1x06_P1.50mm_Horizontal",
-  "rotation_deg": 180,
-  "rms_mm": 4.437,
+  "rotation_deg": 0,
+  "rms_mm": 0.0,
   "matched_by": "number",
-  "board_is_mirror_image": true,
+  "board_is_mirror_image": false,
   "pads_changed": 8,
   "deltas": [
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 7.5,
     "shape": "rect -> roundrect"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 4.5,
     "shape": "rect -> roundrect"
    },
    {
     "pad": "3",
     "old_pad": "3",
-    "moved_mm": 1.5,
     "shape": "rect -> roundrect"
    },
    {
     "pad": "4",
     "old_pad": "4",
-    "moved_mm": 1.5,
     "shape": "rect -> roundrect"
    },
    {
     "pad": "5",
     "old_pad": "5",
-    "moved_mm": 4.5,
     "shape": "rect -> roundrect"
    },
    {
     "pad": "6",
     "old_pad": "6",
-    "moved_mm": 7.5,
     "shape": "rect -> roundrect"
    },
    {
@@ -864,7 +846,7 @@
     "renumbered": "S2 -> MP"
    }
   ],
-  "reason": "Molex recommended pattern: signal pads 0.6 x 1.0 (easyeda copy used 1.5 long), nails numbered MP. Both board copies are mirror images of the Molex top view and of KiCad's stock part: pad 1 sits where contact 6 lands."
+  "reason": "Molex recommended pattern: signal pads 0.6 x 1.0 (easyeda copy used 1.5 long), nails numbered MP."
  },
  {
   "board": "2U_Varients/2U_XY_V1a",
