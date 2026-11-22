@@ -10,23 +10,29 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "tools"))
 
 from model import Footprint, Pad, PasteAperture, Pin, Source, Symbol  # noqa: E402
-from patterns import dual_row, header_2row, two_terminal  # noqa: E402
+from patterns import dual_row, header_2row, ipc_chip, two_terminal  # noqa: E402
 
 LIB = "PROVES"
 
 # ------------------------------------------------------------------ sources
 
-KYOCERA_MLCC = Source(
-    "KYOCERA AVX MLCC safety application guide, Design specifications of printed wiring board",
-    "https://ele.kyocera.com/en/product/capacitor/ceramic/mlcc-handling/mounting-01",
-    "web",
-    "Recommended land pattern dimensions table (a, b, c midpoints)",
+SAMSUNG_CL = Source(
+    "Samsung Electro-Mechanics MLCC catalog (CL05, CL21), Standard & High Capacitors",
+    "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15195",
+    "6",
+    "Structure and Dimensions table (L, W, BW)",
 )
-VISHAY_CRCW = Source(
-    "Vishay D/CRCW e3 thick film chip resistors, doc 20035",
-    "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
-    "11",
-    "Recommended solder pad dimensions, reflow soldering (G, Y, X, Z)",
+YAGEO_CC = Source(
+    "YAGEO CC series X7R product specification V.26 (Nov 2024)",
+    "https://datasheet.lcsc.com/datasheet/pdf/23ccee80ee542e7cf156a772bb589942.pdf?productCode=C14663",
+    "3",
+    "Dimension table, code DA (0603); FH 0603B code DA body folded in",
+)
+UNIROYAL_R = Source(
+    "UNI-ROYAL thick film chip resistors data sheet V.3 (Feb 2019)",
+    "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744",
+    "4",
+    "Dimension table (L, W, B bottom terminal)",
 )
 KENTO_LED = Source(
     "KENTO KT-0603B 0603 LED datasheet",
@@ -147,64 +153,74 @@ def passive(n="1"):
 
 # ------------------------------------------------------------------ footprints
 
+_C0402, _C0402_NOTE = ipc_chip((0.95, 1.05), (0.45, 0.55), (0.15, 0.35), small=True)
 C_0402 = fp(
     "C_0402_1005Metric",
-    "Chip capacitor 0402 (1005 metric), reflow land",
-    KYOCERA_MLCC,
-    two_terminal(0.40, 0.50, 0.40),
+    "Chip capacitor 0402 (1005 metric), IPC-7351B nominal",
+    SAMSUNG_CL,
+    _C0402,
     (-0.5, -0.25, 0.5, 0.25),
     "capacitor 0402 1005",
     polarized=False,
-    notes=("a=0.40 b=0.40 c=0.50 (row L 1.0+-0.05)",),
+    notes=(_C0402_NOTE, "Samsung CL05 code 5: L 1.00+-0.05, W 0.50+-0.05, BW 0.25+-0.10"),
 )
+_C0603, _C0603_NOTE = ipc_chip((1.5, 1.7), (0.7, 0.9), (0.15, 0.6), small=False)
 C_0603 = fp(
     "C_0603_1608Metric",
-    "Chip capacitor 0603 (1608 metric), reflow land",
-    KYOCERA_MLCC,
-    two_terminal(0.90, 0.75, 0.875),
+    "Chip capacitor 0603 (1608 metric), IPC-7351B nominal",
+    YAGEO_CC,
+    _C0603,
     (-0.8, -0.4, 0.8, 0.4),
     "capacitor 0603 1608",
     polarized=False,
-    notes=("a=0.85 b=0.90 c=0.75 (row L 1.6+-0.10)",),
+    notes=(_C0603_NOTE, "Envelope of YAGEO CC0603 DA (BW 0.2-0.6) and FH 0603B DA (WB 0.35+-0.20)"),
 )
+_C0805, _C0805_NOTE = ipc_chip((1.9, 2.1), (1.15, 1.35), (0.2, 0.7), small=False)
 C_0805 = fp(
     "C_0805_2012Metric",
-    "Chip capacitor 0805 (2012 metric), reflow land",
-    KYOCERA_MLCC,
-    two_terminal(1.10, 1.225, 1.125),
+    "Chip capacitor 0805 (2012 metric), IPC-7351B nominal",
+    SAMSUNG_CL,
+    _C0805,
     (-1.0, -0.625, 1.0, 0.625),
     "capacitor 0805 2012",
     polarized=False,
-    notes=("a=1.15 b=1.10 c=1.225 (row L 2.0+-0.10)",),
+    notes=(_C0805_NOTE, "Samsung CL21 code F: L 2.00+-0.10, W 1.25+-0.10, BW 0.5 +0.2/-0.3"),
 )
+_R0402, _R0402_NOTE = ipc_chip((0.9, 1.1), (0.45, 0.55), (0.15, 0.35), small=True)
 R_0402 = fp(
     "R_0402_1005Metric",
-    "Chip resistor 0402 (1005 metric), reflow land",
-    VISHAY_CRCW,
-    two_terminal(0.60, 0.60, 0.525),
+    "Chip resistor 0402 (1005 metric), IPC-7351B nominal",
+    UNIROYAL_R,
+    _R0402,
     (-0.5, -0.25, 0.5, 0.25),
     "resistor 0402 1005",
     polarized=False,
-    notes=("G=0.45 Y=0.6 X=0.6 Z=1.65",),
+    notes=(_R0402_NOTE, "UNI-ROYAL 0402: L 1.00+-0.10, W 0.50+-0.05, B 0.25+-0.10"),
 )
+_R0603, _R0603_NOTE = ipc_chip((1.5, 1.7), (0.7, 0.9), (0.1, 0.5), small=False)
 R_0603 = fp(
     "R_0603_1608Metric",
-    "Chip resistor 0603 (1608 metric), reflow land",
-    VISHAY_CRCW,
-    two_terminal(0.75, 1.00, 0.75),
-    (-0.775, -0.425, 0.775, 0.425),
+    "Chip resistor 0603 (1608 metric), IPC-7351B nominal",
+    UNIROYAL_R,
+    _R0603,
+    (-0.8, -0.4, 0.8, 0.4),
     "resistor 0603 1608",
     polarized=False,
-    notes=("G=0.75 Y=0.75 X=1.00 Z=2.25",),
+    notes=(_R0603_NOTE, "UNI-ROYAL 0603: L 1.60+-0.10, W 0.80+-0.10, B 0.30+-0.20"),
 )
+_LED0603, _LED0603_NOTE = ipc_chip((1.5, 1.7), (0.7, 0.9), (0.2, 0.4), small=False)
 LED_0603 = fp(
     "LED_0603_1608Metric",
-    "Chip LED 0603 (1608 metric), pad 1 cathode",
+    "Chip LED 0603 (1608 metric), IPC-7351B nominal, pad 1 cathode",
     KENTO_LED,
-    two_terminal(0.70, 0.70, 0.70),
+    _LED0603,
     (-0.8, -0.4, 0.8, 0.4),
     "LED 0603 1608",
-    notes=("0.70 x 0.70 pads, 0.70 gap; datasheet pin 2 (cathode) is pad 1 here",),
+    notes=(
+        _LED0603_NOTE,
+        "KENTO KT-0603: 1.6 x 0.8 body, 0.30 terminal, +-0.10 general tolerance",
+        "Datasheet pin 2 (cathode) is pad 1 here",
+    ),
 )
 D_SMA = fp(
     "D_SMA_DO-214AC",

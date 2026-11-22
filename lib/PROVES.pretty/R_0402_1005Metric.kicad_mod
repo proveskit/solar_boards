@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Chip resistor 0402 (1005 metric), reflow land. Source: Vishay D/CRCW e3 thick film chip resistors, doc 20035, p.11, Recommended solder pad dimensions, reflow soldering (G, Y, X, Z). G=0.45 Y=0.6 X=0.6 Z=1.65")
+	(descr "Chip resistor 0402 (1005 metric), IPC-7351B nominal. Source: UNI-ROYAL thick film chip resistors data sheet V.3 (Feb 2019), p.4, Dimension table (L, W, B bottom terminal). IPC-7351B nominal from body L 0.9-1.1, W 0.45-0.55, terminal 0.15-0.35: Z=1.52 G=0.3 X=0.6. UNI-ROYAL 0402: L 1.00+-0.10, W 0.50+-0.05, B 0.25+-0.10")
 	(tags "resistor 0402 1005")
 	(property "Reference" "REF**"
 		(at 0 -1.35 0)
@@ -29,7 +29,7 @@
 			)
 		)
 	)
-	(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+	(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -40,7 +40,7 @@
 			)
 		)
 	)
-	(property "Description" "Chip resistor 0402 (1005 metric), reflow land"
+	(property "Description" "Chip resistor 0402 (1005 metric), IPC-7351B nominal"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -54,8 +54,8 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -1.08 -0.55)
-		(end 1.08 0.55)
+		(start -1.01 -0.55)
+		(end 1.01 0.55)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -89,15 +89,15 @@
 		)
 	)
 	(pad "1" smd roundrect
-		(at -0.525 0)
-		(size 0.6 0.6)
+		(at -0.455 0)
+		(size 0.61 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "0acea5e2-532d-5bf2-9e4c-2a586dcf90e0")
 	)
 	(pad "2" smd roundrect
-		(at 0.525 0)
-		(size 0.6 0.6)
+		(at 0.455 0)
+		(size 0.61 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "8737e31b-8112-5b3e-b3a3-a90095fc651c")

@@ -27,14 +27,14 @@ LIVE_BOARDS = ("XY_Face_V4", "XY_Face_V4nb", "XY_Faces_V3lp", "XY_Faces_V3r", "Z
 TOL = 0.005
 
 REASONS = {
-    "C_0402_1005Metric": "Board used KiCad stock IPC-7351 pads; PROVES uses the MLCC maker's land (KYOCERA AVX "
-    "midpoints), which limits solder volume to reduce crack risk.",
-    "C_0603_1608Metric": "As C_0402: MLCC maker's land replaces the KiCad stock IPC pads.",
-    "C_0805_2012Metric": "As C_0402: MLCC maker's land replaces the KiCad stock IPC pads.",
-    "R_0402_1005Metric": "Board used KiCad stock pads; PROVES uses the Vishay CRCW reflow land "
-    "(Uni-Royal, the ordered maker, publishes none).",
-    "R_0603_1608Metric": "As R_0402: Vishay CRCW reflow land replaces KiCad stock pads.",
-    "LED_0603_1608Metric": "KENTO KT-0603 suggested pads (0.70 square, 0.70 gap) replace KiCad stock pads.",
+    "C_0402_1005Metric": "Same IPC-7351B nominal equations as KiCad's stock part, fed the ordered Samsung CL05 "
+    "tolerances instead of IPC-SM-782 generic ones.",
+    "C_0603_1608Metric": "IPC-7351B nominal from the YAGEO and FH 0603 envelope; their wider terminal range "
+    "narrows the gap.",
+    "C_0805_2012Metric": "IPC-7351B nominal from the Samsung CL21 body.",
+    "R_0402_1005Metric": "IPC-7351B nominal from the UNI-ROYAL 0402 body.",
+    "R_0603_1608Metric": "IPC-7351B nominal from the UNI-ROYAL 0603 body.",
+    "LED_0603_1608Metric": "IPC-7351B nominal from the KENTO KT-0603 body.",
     "D_SMA_DO-214AC": "Comchip CDBA240LL-HF suggested pads (2.60 x 1.70 at 4.10) replace the 2.5 x 1.7 at 4.0 "
     "house pads.",
     "Hirose_DF11-4DP-2DSA_2x02_P2.00mm_Vertical": "Hirose hole 0.8 +0.1/-0 drilled at 0.85 with a 1.45 round pad "

@@ -242,6 +242,20 @@ def check_regenerates(errors):
             errors.append(f"{SYMLIB.name}: L1 regenerate: differs from parts.py output (hand edit?)")
 
 
+def check_ipc_equations(errors):
+    """The IPC chip calculator must reproduce KiCad's stock C_0402 and C_0603 pads from the same IPC-SM-782 bodies."""
+    from patterns import ipc_chip
+
+    for args, want in (
+        (((0.9, 1.1), (0.4, 0.6), (0.1, 0.3), True), (0.56, 0.62, 0.48)),
+        (((1.45, 1.75), (0.65, 0.95), (0.2, 0.5), False), (0.9, 0.95, 0.775)),
+    ):
+        pad = ipc_chip(*args)[0][1]
+        got = (round(pad.w, 4), round(pad.h, 4), round(pad.x, 4))
+        if got != want:
+            errors.append(f"tools/patterns.py: L2 IPC equations: {args} gave {got}, expected {want}")
+
+
 def main():
     errors = []
     footprints = {}
@@ -251,6 +265,7 @@ def main():
             footprints[result[0]] = result[1]
     symbols = check_symbols(footprints, errors)
     check_regenerates(errors)
+    check_ipc_equations(errors)
     for e in errors:
         print(e)
     print(f"{len(footprints)} footprints, {len(symbols)} symbols, {len(errors)} violations")

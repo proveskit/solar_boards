@@ -3,10 +3,10 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Chip resistor 0603 (1608 metric), reflow land. Source: Vishay D/CRCW e3 thick film chip resistors, doc 20035, p.11, Recommended solder pad dimensions, reflow soldering (G, Y, X, Z). G=0.75 Y=0.75 X=1.00 Z=2.25")
+	(descr "Chip resistor 0603 (1608 metric), IPC-7351B nominal. Source: UNI-ROYAL thick film chip resistors data sheet V.3 (Feb 2019), p.4, Dimension table (L, W, B bottom terminal). IPC-7351B nominal from body L 1.5-1.7, W 0.7-0.9, terminal 0.1-0.5: Z=2.45 G=0.7 X=0.95. UNI-ROYAL 0603: L 1.60+-0.10, W 0.80+-0.10, B 0.30+-0.20")
 	(tags "resistor 0603 1608")
 	(property "Reference" "REF**"
-		(at 0 -1.55 0)
+		(at 0 -1.53 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "80a1fd35-daa4-544c-a47c-98c5af9dd816")
@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "R_0603_1608Metric"
-		(at 0 1.55 0)
+		(at 0 1.53 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "ba650801-2296-5c30-8f21-9ec405c3133b")
@@ -29,7 +29,7 @@
 			)
 		)
 	)
-	(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+	(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -40,7 +40,7 @@
 			)
 		)
 	)
-	(property "Description" "Chip resistor 0603 (1608 metric), reflow land"
+	(property "Description" "Chip resistor 0603 (1608 metric), IPC-7351B nominal"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -53,40 +53,20 @@
 	)
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
-	(fp_line
-		(start -0.11 -0.48)
-		(end 0.11 -0.48)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "3370a96a-4073-5997-a945-5b6c2d6f2433")
-	)
-	(fp_line
-		(start -0.11 0.48)
-		(end 0.11 0.48)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "a295f7a1-6226-5faa-9654-17a87af84f57")
-	)
 	(fp_rect
-		(start -1.38 -0.75)
-		(end 1.38 0.75)
+		(start -1.48 -0.73)
+		(end 1.48 0.73)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "327dd7f8-2e6f-5f96-bd3b-825d6b6ef5dc")
+		(uuid "3370a96a-4073-5997-a945-5b6c2d6f2433")
 	)
 	(fp_poly
 		(pts
-			(xy -0.78 -0.42) (xy 0.78 -0.42) (xy 0.78 0.42) (xy -0.78 0.42)
+			(xy -0.8 -0.4) (xy 0.8 -0.4) (xy 0.8 0.4) (xy -0.8 0.4)
 		)
 		(stroke
 			(width 0.1)
@@ -100,27 +80,27 @@
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "009523ac-41ce-598f-981f-d89e19d6a3e3")
+		(uuid "a295f7a1-6226-5faa-9654-17a87af84f57")
 		(effects
 			(font
-				(size 0.26 0.26)
-				(thickness 0.039)
+				(size 0.25 0.25)
+				(thickness 0.038)
 			)
 		)
 	)
 	(pad "1" smd roundrect
-		(at -0.75 0)
-		(size 0.75 1)
+		(at -0.7875 0)
+		(size 0.875 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "b3af5871-6797-52d6-9614-19bce39abc03")
+		(uuid "327dd7f8-2e6f-5f96-bd3b-825d6b6ef5dc")
 	)
 	(pad "2" smd roundrect
-		(at 0.75 0)
-		(size 0.75 1)
+		(at 0.7875 0)
+		(size 0.875 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "40d8e8a6-5c95-5208-93a8-0a9ea94edff7")
+		(uuid "009523ac-41ce-598f-981f-d89e19d6a3e3")
 	)
 	(embedded_fonts no)
 )

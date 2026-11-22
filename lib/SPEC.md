@@ -8,6 +8,7 @@ This spec defines every symbol and footprint in the `PROVES` library. `tools/mod
 |---|---|
 | F3 | Every footprint names its source in `descr` as `Source: <document>, p.<page>, <figure>`, and its `Datasheet` property is a URL. |
 | — | Copper comes from the land pattern the part's manufacturer publishes. If the ordered manufacturer publishes none, use another manufacturer's published land for the same package and say so in the source. |
+| — | Chip resistors, chip capacitors and chip LEDs use the IPC-7351B nominal (level B) Z, G and X equations, fed the body length, width and terminal tolerances from the ordered parts' datasheets. Several makers for one size use the envelope of their tolerances. Fabrication tolerance is 0.1 and placement 0.05. Results round to 0.02 below 1608 and 0.05 from 1608 up. |
 | — | A dimension read from drawing scale, symmetry, or a sibling part is stated as such in the footprint notes. |
 | — | A house part (no vendor drawing exists) cites `PROVES house part` and keeps the flown geometry. |
 | — | Nothing is copied from KiCad stock, easyeda2kicad, SnapEDA, or vendor CAD downloads. They may be read to cross-check a result. |
@@ -50,3 +51,4 @@ This spec defines every symbol and footprint in the `PROVES` library. `tools/mod
 | ID | Rule |
 |---|---|
 | L1 | `python3 lib/tools/generate.py` reproduces the committed `PROVES.pretty` and `PROVES.kicad_sym` byte for byte. Hand edits fail the check. |
+| L2 | `ipc_chip` reproduces KiCad's stock `C_0402` and `C_0603` pads when given the same IPC-SM-782 bodies. |

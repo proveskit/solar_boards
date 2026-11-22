@@ -151,7 +151,7 @@
   "old": "Capacitor_SMD:C_0402_1005Metric",
   "new": "PROVES:C_0402_1005Metric",
   "rotation_deg": 0,
-  "rms_mm": 0.08,
+  "rms_mm": 0.025,
   "matched_by": "number",
   "board_is_mirror_image": false,
   "pads_changed": 2,
@@ -159,17 +159,17 @@
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 0.08,
-    "size": "0.56 x 0.62 -> 0.4 x 0.5"
+    "moved_mm": 0.025,
+    "size": "0.56 x 0.62 -> 0.59 x 0.6"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 0.08,
-    "size": "0.56 x 0.62 -> 0.4 x 0.5"
+    "moved_mm": 0.025,
+    "size": "0.56 x 0.62 -> 0.59 x 0.6"
    }
   ],
-  "reason": "Board used KiCad stock IPC-7351 pads; PROVES uses the MLCC maker's land (KYOCERA AVX midpoints), which limits solder volume to reduce crack risk."
+  "reason": "Same IPC-7351B nominal equations as KiCad's stock part, fed the ordered Samsung CL05 tolerances instead of IPC-SM-782 generic ones."
  },
  {
   "board": "XY_Face_V4",
@@ -218,7 +218,7 @@
   "old": "Resistor_SMD:R_0402_1005Metric",
   "new": "PROVES:R_0402_1005Metric",
   "rotation_deg": 0,
-  "rms_mm": 0.015,
+  "rms_mm": 0.055,
   "matched_by": "number",
   "board_is_mirror_image": false,
   "pads_changed": 2,
@@ -226,17 +226,17 @@
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 0.015,
-    "size": "0.54 x 0.64 -> 0.6 x 0.6"
+    "moved_mm": 0.055,
+    "size": "0.54 x 0.64 -> 0.61 x 0.6"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 0.015,
-    "size": "0.54 x 0.64 -> 0.6 x 0.6"
+    "moved_mm": 0.055,
+    "size": "0.54 x 0.64 -> 0.61 x 0.6"
    }
   ],
-  "reason": "Board used KiCad stock pads; PROVES uses the Vishay CRCW reflow land (Uni-Royal, the ordered maker, publishes none)."
+  "reason": "IPC-7351B nominal from the UNI-ROYAL 0402 body."
  },
  {
   "board": "XY_Face_V4",
@@ -327,7 +327,7 @@
   "old": "LED_SMD:LED_0603_1608Metric",
   "new": "PROVES:LED_0603_1608Metric",
   "rotation_deg": 0,
-  "rms_mm": 0.088,
+  "rms_mm": 0.025,
   "matched_by": "number",
   "board_is_mirror_image": false,
   "pads_changed": 2,
@@ -335,17 +335,17 @@
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 0.088,
-    "size": "0.875 x 0.95 -> 0.7 x 0.7"
+    "moved_mm": 0.025,
+    "size": "0.875 x 0.95 -> 0.825 x 0.95"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 0.088,
-    "size": "0.875 x 0.95 -> 0.7 x 0.7"
+    "moved_mm": 0.025,
+    "size": "0.875 x 0.95 -> 0.825 x 0.95"
    }
   ],
-  "reason": "KENTO KT-0603 suggested pads (0.70 square, 0.70 gap) replace KiCad stock pads."
+  "reason": "IPC-7351B nominal from the KENTO KT-0603 body."
  },
  {
   "board": "XY_Face_V4",
@@ -605,7 +605,7 @@
   "old": "Capacitor_SMD:C_0603_1608Metric",
   "new": "PROVES:C_0603_1608Metric",
   "rotation_deg": 0,
-  "rms_mm": 0.1,
+  "rms_mm": 0.037,
   "matched_by": "number",
   "board_is_mirror_image": false,
   "pads_changed": 2,
@@ -613,17 +613,17 @@
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 0.1,
-    "size": "0.9 x 0.95 -> 0.9 x 0.75"
+    "moved_mm": 0.037,
+    "size": "0.9 x 0.95 -> 0.975 x 0.95"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 0.1,
-    "size": "0.9 x 0.95 -> 0.9 x 0.75"
+    "moved_mm": 0.037,
+    "size": "0.9 x 0.95 -> 0.975 x 0.95"
    }
   ],
-  "reason": "As C_0402: MLCC maker's land replaces the KiCad stock IPC pads."
+  "reason": "IPC-7351B nominal from the YAGEO and FH 0603 envelope; their wider terminal range narrows the gap."
  },
  {
   "board": "XY_Faces_V3lp",
@@ -631,7 +631,7 @@
   "old": "Resistor_SMD:R_0603_1608Metric",
   "new": "PROVES:R_0603_1608Metric",
   "rotation_deg": 0,
-  "rms_mm": 0.075,
+  "rms_mm": 0.037,
   "matched_by": "number",
   "board_is_mirror_image": false,
   "pads_changed": 2,
@@ -639,17 +639,17 @@
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 0.075,
-    "size": "0.8 x 0.95 -> 0.75 x 1"
+    "moved_mm": 0.037,
+    "size": "0.8 x 0.95 -> 0.875 x 0.95"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 0.075,
-    "size": "0.8 x 0.95 -> 0.75 x 1"
+    "moved_mm": 0.037,
+    "size": "0.8 x 0.95 -> 0.875 x 0.95"
    }
   ],
-  "reason": "As R_0402: Vishay CRCW reflow land replaces KiCad stock pads."
+  "reason": "IPC-7351B nominal from the UNI-ROYAL 0603 body."
  },
  {
   "board": "XY_Faces_V3lp",
@@ -657,7 +657,7 @@
   "old": "Capacitor_SMD:C_0805_2012Metric",
   "new": "PROVES:C_0805_2012Metric",
   "rotation_deg": 0,
-  "rms_mm": 0.175,
+  "rms_mm": 0.062,
   "matched_by": "number",
   "board_is_mirror_image": false,
   "pads_changed": 2,
@@ -665,17 +665,17 @@
    {
     "pad": "1",
     "old_pad": "1",
-    "moved_mm": 0.175,
-    "size": "1 x 1.45 -> 1.1 x 1.225"
+    "moved_mm": 0.062,
+    "size": "1 x 1.45 -> 1.075 x 1.4"
    },
    {
     "pad": "2",
     "old_pad": "2",
-    "moved_mm": 0.175,
-    "size": "1 x 1.45 -> 1.1 x 1.225"
+    "moved_mm": 0.062,
+    "size": "1 x 1.45 -> 1.075 x 1.4"
    }
   ],
-  "reason": "As C_0402: MLCC maker's land replaces the KiCad stock IPC pads."
+  "reason": "IPC-7351B nominal from the Samsung CL21 body."
  },
  {
   "board": "XY_Faces_V3r",
