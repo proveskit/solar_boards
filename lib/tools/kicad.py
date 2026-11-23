@@ -161,7 +161,7 @@ def footprint_text(fp: Footprint) -> str:
         f"\t(descr {q(descr)})",
         f"\t(tags {q(fp.tags)})",
     ]
-    out += _fp_property(uid, "Reference", "REF**", (0, snap(cy0 - 0.8)), "F.SilkS", 1, thickness=0.15)
+    out += _fp_property(uid, "Reference", "REF**", (0, snap(cy0 - 0.8)), "F.SilkS", 1, hide=True, thickness=0.15)
     out += _fp_property(uid, "Value", fp.name, (0, snap(cy1 + 0.8)), "F.Fab", 1, thickness=0.15)
     out += _fp_property(uid, "Datasheet", fp.source.url, (0, 0), "F.Fab", 1.27, hide=True)
     out += _fp_property(uid, "Description", fp.description, (0, 0), "F.Fab", 1.27, hide=True)

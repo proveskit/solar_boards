@@ -9,6 +9,7 @@
 		(at 0 -2.55 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "b74f853e-7bc2-5b56-9a9a-29ea23d014c8")
 		(effects
 			(font

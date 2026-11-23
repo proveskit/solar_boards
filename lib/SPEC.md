@@ -20,7 +20,7 @@ This spec defines every symbol and footprint in the `PROVES` library. `tools/mod
 | F1 | The file name equals the footprint name. Names follow `<Maker>_<PackageCode>_<Package>_<Body>_<Pitch>` for vendor packages and `<Type>_<Size>` for generic chips. |
 | F2 | Files are KiCad 10 format (`version 20260206`) exactly as `kicad-cli fp upgrade` writes them. |
 | F4 | No 3D model references. Models are a later addition with their own source rule. |
-| F5 | `Reference` sits on `F.SilkS` above the courtyard. `Value` sits on `F.Fab` below it. A `${REFERENCE}` text sits on `F.Fab` at the body centre. |
+| F5 | `Reference` sits on `F.SilkS` above the courtyard, hidden, so boards carry no refdes on silk. `Value` sits on `F.Fab` below it. A `${REFERENCE}` text sits on `F.Fab` at the body centre. |
 | F6 | Every pad has a number. Pad `1` exists. Mechanical pads that carry no signal are numbered `MP`. |
 | F7 | An SMD footprint's origin is the centre of its pad extent. A THT footprint's origin is pad 1, the pad-extent centre, or the body centre. |
 | F8 | SMD pads use `F.Cu F.Mask F.Paste`. A part with a vendor stencil drawing uses `F.Cu F.Mask` pads and `F.Paste` polygons copied from the stencil. THT pads use `*.Cu *.Mask`. |

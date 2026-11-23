@@ -87,6 +87,8 @@ def check_footprint(path, errors):
     val = next(p for p in children(fp, "property") if p[1] == "Value")
     if value(ref, "layer") != "F.SilkS" or value(val, "layer") != "F.Fab":
         err("F5 text", "Reference must be on F.SilkS and Value on F.Fab")
+    if value(ref, "hide") != "yes":
+        err("F5 text", "Reference on F.SilkS must be hidden (no refdes on silk)")
     if not any(
         t[1] == "user" and t[2] == "${REFERENCE}" and value(t, "layer") == "F.Fab" for t in children(fp, "fp_text")
     ):
