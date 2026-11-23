@@ -1,0 +1,107 @@
+(footprint "C_0402_1005Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Chip capacitor 0402 (1005 metric), IPC-7351B nominal. Source: Samsung Electro-Mechanics MLCC catalog (CL05, CL21), Standard & High Capacitors, p.6, Structure and Dimensions table (L, W, BW). IPC-7351B nominal from body L 0.95-1.05, W 0.45-0.55, terminal 0.15-0.35: Z=1.5 G=0.32 X=0.6. Samsung CL05 code 5: L 1.00+-0.05, W 0.50+-0.05, BW 0.25+-0.10")
+	(tags "capacitor 0402 1005")
+	(property "Reference" "REF**"
+		(at 0 -1.35 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "06e94a69-0e12-58f8-a3a2-3c2493b2b2e5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "C_0402_1005Metric"
+		(at 0 1.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "677f1ba4-d31f-5dbe-92e8-6937e625fbf8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15195"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47e048ec-fd05-5687-917c-4324c949a565")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Chip capacitor 0402 (1005 metric), IPC-7351B nominal"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1c10977-199a-5766-a3bd-03375b5ba32b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1 -0.55)
+		(end 1 0.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bd22b11a-8389-5540-b47b-001e464a7aed")
+	)
+	(fp_poly
+		(pts
+			(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7c4d6738-5332-582d-8ad4-cf482625bd3b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5c506b65-7751-52b5-836f-419b331bf7c5")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.038)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.455 0)
+		(size 0.59 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "d12ac27f-83ed-5fad-94ff-f22b0fee4a5f")
+	)
+	(pad "2" smd roundrect
+		(at 0.455 0)
+		(size 0.59 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "de734283-5ac2-5b7c-9ad5-a565b7c7c1c4")
+	)
+	(embedded_fonts no)
+)

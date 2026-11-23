@@ -11,8 +11,11 @@ Each solar panel implements the following elements:
 - 1x 5-pin Molex 1.5mm Pitch Picolock for VSolar, 3.3V Power, and I2C connections
 
 # Variants
-- The bare_varients are functionally the same, but have additional artwork on them as the solar cells are not intended to be populated. 
+- The bare panels (artwork only, no cells) and the XY panel with an RBF hole were retired in 2026-11. Restore them from git history before commit `03308ff` if needed.
 - The Z Face Combi design is an in testing variant of the Z- face that combines all of the interfacing for the adjacent solar faces. From there a single connector goes back to the EPS board, rather than all of the solar faces directly connecting to the EPS board as with the original EPS design. 
+
+# Parts library
+`lib/` holds the PROVES-owned symbol and footprint library, generated from manufacturer datasheets. See `lib/README.md`. It will move to its own repository later.
 
 # Flight Heritage
 *Version history for the solar boards is a little unclear, so we are going to datum the current version at V1 and go from there. 

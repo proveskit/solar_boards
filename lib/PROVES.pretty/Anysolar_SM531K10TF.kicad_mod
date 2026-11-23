@@ -1,0 +1,176 @@
+(footprint "Anysolar_SM531K10TF"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "ANYSOLAR SM531K10TF solar cell 89 x 65 mm, four back contacts. Source: ANYSOLAR SM531K10TF datasheet (May 2021), p.3, Package front-side and back-side view. Contacts 3.0 dia, 22.3 from each side, 3.0 from top and bottom (bottom row per SM531K10L drawing). Back view mirrored to top view: pads 1/2 are the +/- of one half, 3/4 of the other. Cell land: plated hole the size of the cell's 3.0 mm contact, soldered from the board's back through the hole; 5.0 mm pad as flown on the XY and 2U faces")
+	(tags "solar cell ANYSOLAR SM531K10TF")
+	(property "Reference" "REF**"
+		(at 0 -33.55 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "37573de3-4885-5070-bbcd-4c797ad0ae20")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Anysolar_SM531K10TF"
+		(at 0 33.55 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b9467ffd-28a2-5b72-bd33-31688d188826")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "http://konkur.de/content/files/pdf/anysolar/SM531K10TF%20DATA%20SHEET%20202105.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5efb44d3-8262-5f0c-86f6-9b62968a9298")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "ANYSOLAR SM531K10TF solar cell 89 x 65 mm, four back contacts"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf1a5b80-b9ec-54a0-8b9b-b13bcd82761b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -44.56 -32.56)
+		(end -44.56 32.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e627af47-a31e-58b3-a020-06f4827857ef")
+	)
+	(fp_line
+		(start -44.56 -32.56)
+		(end 44.56 -32.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4ff9556-389b-52ae-9287-a2eaeeb46567")
+	)
+	(fp_line
+		(start -44.56 32.56)
+		(end 44.56 32.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "82eaf4b4-fb29-597b-aeba-a36e4a6b70c3")
+	)
+	(fp_line
+		(start 44.56 -32.56)
+		(end 44.56 32.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "28786325-f97d-5370-add5-324f4bfaa6fc")
+	)
+	(fp_circle
+		(center 19.29 29.5)
+		(end 19.365 29.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "6a46df01-43ed-5c65-b158-f44b2a4d9e5c")
+	)
+	(fp_rect
+		(start -44.75 -32.75)
+		(end 44.75 32.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2a1ae545-fc73-5e1a-a12f-27cd186fc16d")
+	)
+	(fp_poly
+		(pts
+			(xy -44.5 -32.5) (xy 44.5 -32.5) (xy 44.5 31.5) (xy 43.5 32.5) (xy -44.5 32.5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "03b24ffb-381b-5891-a52b-8c4e4d5bfb9c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f4b13c47-d5a7-5b8f-84dd-de82e36d6aba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 22.2 29.5)
+		(size 5 5)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e926e2cd-2b91-5d00-8d9c-e5b8144a625d")
+	)
+	(pad "2" thru_hole circle
+		(at 22.2 -29.5)
+		(size 5 5)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ce97eb95-e0b4-5841-8b46-8f34158a0e6e")
+	)
+	(pad "3" thru_hole circle
+		(at -22.2 -29.5)
+		(size 5 5)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9ee725b9-a229-52d0-a01a-d7d606a5d841")
+	)
+	(pad "4" thru_hole circle
+		(at -22.2 29.5)
+		(size 5 5)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d2ecdf20-6711-5287-8892-156b8bdf25b4")
+	)
+	(embedded_fonts no)
+)

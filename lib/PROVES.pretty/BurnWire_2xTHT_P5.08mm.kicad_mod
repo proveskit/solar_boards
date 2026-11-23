@@ -1,0 +1,129 @@
+(footprint "BurnWire_2xTHT_P5.08mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Burn wire tie-down: two plated holes the FireLine loop passes through. Source: PROVES house part (no vendor drawing exists), p.-, geometry kept from the flown XY V4 and 2U V1a boards")
+	(tags "burn wire nichrome FireLine")
+	(property "Reference" "REF**"
+		(at 0 -1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "24f6acfc-2727-589c-a60a-23d98918fa1d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "BurnWire_2xTHT_P5.08mm"
+		(at 0 1.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4460a8a2-63d1-5f09-99d9-785393a62b77")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://docs.proveskit.com"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "82838b1d-58be-5335-bb51-a4f762eb91b8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Burn wire tie-down: two plated holes the FireLine loop passes through"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c4e975c-f416-5e13-9549-596b470ee009")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0.96 -0.76)
+		(end 4.12 -0.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "23e5ae9f-50b6-5363-8c17-878078335391")
+	)
+	(fp_line
+		(start 0.96 0.76)
+		(end 4.12 0.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f8b644d5-32cb-5c64-8353-34421ea71c8a")
+	)
+	(fp_rect
+		(start -0.95 -0.95)
+		(end 6.03 0.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3b08a37c-12c5-5a02-b85d-9fd10c047ace")
+	)
+	(fp_poly
+		(pts
+			(xy -0.7 -0.7) (xy 5.78 -0.7) (xy 5.78 0.7) (xy -0.7 0.7)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6301fe1a-287e-5060-bc72-a6cb8f99f251")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "763a3749-5960-54a3-985a-3c565e3c1f95")
+		(effects
+			(font
+				(size 0.42 0.42)
+				(thickness 0.063)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.4 1.4)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "01cc0c36-17c7-591e-82ee-168574f43bc2")
+	)
+	(pad "2" thru_hole circle
+		(at 5.08 0)
+		(size 1.4 1.4)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1d88de69-46a7-529f-b14b-22b26e84312d")
+	)
+	(embedded_fonts no)
+)
